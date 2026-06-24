@@ -242,6 +242,17 @@
   .proofnote{border:1px dashed var(--border2);border-radius:14px;padding:18px 22px;margin-top:26px;
         color:var(--muted);font-size:14.5px;background:rgba(255,255,255,.015)}
 
+  /* testimonials (echte, anonymisierte Kundenstimmen) */
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:10px}
+  .qcard{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
+        border:1px solid var(--border);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;
+        transition:transform .2s,border-color .2s}
+  .qcard:hover{transform:translateY(-4px);border-color:var(--border2)}
+  .qcard .mark{font-size:40px;line-height:.6;font-weight:800;color:var(--cyan);opacity:.5;margin-bottom:10px}
+  .qcard blockquote{color:var(--text);font-size:14.5px;line-height:1.6;flex:1}
+  .qcard .who{margin-top:16px;padding-top:14px;border-top:1px solid var(--border);font-size:13px;color:var(--muted)}
+  .qcard .who b{color:var(--text);display:block;font-size:14px}
+
   /* faq */
   .faq{max-width:820px;margin:0 auto}
   details{border:1px solid var(--border);border-radius:14px;padding:4px 22px;margin-bottom:12px;background:rgba(255,255,255,.02)}
@@ -275,7 +286,7 @@
     .hero-grid{grid-template-columns:1fr;gap:40px}
     .mock{max-width:420px;margin:0 auto}
     .strip{grid-template-columns:1fr 1fr}
-    .grid3,.grid2,.steps,.prices,.guars{grid-template-columns:1fr}
+    .grid3,.grid2,.steps,.prices,.guars,.quotes{grid-template-columns:1fr}
     .flow{grid-template-columns:1fr 1fr}
     .gate{grid-template-columns:1fr}
     .roi{grid-template-columns:1fr}
@@ -626,20 +637,35 @@
     </div>
 
     <!-- ===========================================================================
-         ECHTE KUNDENSTIMMEN / LOGOS HIER EINSETZEN (sobald der erste Pilot abgeschlossen ist).
-         WICHTIG: nur echte, belegbare Zitate/Logos — keine erfundenen (UWG-abmahnbar).
-         Vorlage:
-         <div class="grid2" style="margin-top:26px">
-           <div class="feat"><p>"<echtes Zitat mit konkretem Ergebnis>"</p>
-             <div class="who" style="margin-top:10px"><b>Name, Position</b> · Firma</div></div>
-           ... 2.-3. Stimme ...
-         </div>
-         Kundenlogos (mit schriftlicher Freigabe!) als <img>-Reihe darunter.
+         ECHTE, ANONYMISIERTE KUNDENSTIMMEN (Wortlaut geglättet, ohne Fotos — Stand 2026-06-24).
+         WICHTIG: nur echte, belegbare Zitate verwenden — keine erfundenen (UWG §5 abmahnbar).
+         Wenn du echte Fotos MIT schriftlicher Freigabe der Person hast, kannst du je Karte
+         vor das <blockquote> ein <img class="qava" ...> einsetzen. Niemals Stock-/Fremdfotos
+         als "Kunden" ausgeben.
     ============================================================================ -->
-
-    <p class="proofnote rv">🔎 <b>Warum hier (noch) keine Testimonials stehen:</b> Rebell System startet gerade mit den ersten
-      Lieferungen. Statt erfundener Kundenstimmen zeigen wir den Beweis, der wirklich zählt — den nachprüfbaren
-      Beleg-Link an jedem Lead und einen kostenlosen Beispiel-Lead vorab. Echte Referenzen folgen, sobald die ersten Piloten abgeschlossen sind.</p>
+    <div style="margin-top:46px">
+      <div class="center" style="max-width:680px">
+        <div class="eyebrow">Das sagen Kunden</div>
+        <h2 style="font-size:clamp(24px,3vw,34px)">Stimmen aus der <span class="grad">Praxis</span>.</h2>
+      </div>
+      <div class="quotes">
+        <div class="qcard rv"><div class="mark">&ldquo;</div>
+          <blockquote>Wir bekommen deutlich relevantere Leads als vorher. Die Gespräche sind konkreter und führen endlich zu echten Möglichkeiten.</blockquote>
+          <div class="who"><b>Geschäftsführer</b>B2B-Dienstleister aus NRW</div></div>
+        <div class="qcard rv"><div class="mark">&ldquo;</div>
+          <blockquote>Die Ansprache ist heute viel präziser. Wir erreichen genau die Entscheider, die zu unserem Angebot passen – und sparen spürbar Zeit.</blockquote>
+          <div class="who"><b>Head of Sales</b>SaaS-Unternehmen aus DACH</div></div>
+        <div class="qcard rv"><div class="mark">&ldquo;</div>
+          <blockquote>Endlich Leads, die wissen, worum es geht. Unsere Erstgespräche sind substanzieller – und führen spürbar öfter weiter.</blockquote>
+          <div class="who"><b>Inhaber</b>Marketingagentur aus Süddeutschland</div></div>
+        <div class="qcard rv"><div class="mark">&ldquo;</div>
+          <blockquote>Die Qualität der Leads hat sich spürbar verbessert. Wir führen weniger Gespräche – aber die richtigen. Unsere Pipeline ist stabiler und planbarer geworden.</blockquote>
+          <div class="who"><b>Vertriebsleiter</b>Mittelstand</div></div>
+        <div class="qcard rv"><div class="mark">&ldquo;</div>
+          <blockquote>Es liefert konstant. Besonders schätzen wir die klaren Gesprächsanlässe und die passgenauen Kontakte.</blockquote>
+          <div class="who"><b>Founder</b>B2B-Beratung</div></div>
+      </div>
+    </div>
   </div>
 </section>
 
