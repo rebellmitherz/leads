@@ -1,4 +1,4 @@
-# Rebellsystem Leads — Verkaufs-Website
+# Rebellsystem Signal-Leads — Verkaufs-Website
 
 Statische, eigenständige Landingpage für das Produkt **„B2B-Leads mit echtem Kaufsignal + Kaufbereitschafts-Analyse"** (ab 500 €). GitHub-Pages-ready, keine externen Tracker, keine externen Fonts (DSGVO-schonend).
 
