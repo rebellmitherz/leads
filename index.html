@@ -464,9 +464,10 @@
 </footer>
 
 <script>
-  // ====== HIER deinen echten Calendly-Link eintragen (eine Zeile) ======
-  const CALENDLY = ""; // z. B. "https://calendly.com/rebellsystem/erstgespraech"
-  // =====================================================================
+  // ====== Calendly-Link (bei Bedarf hier aendern) ======
+  const CALENDLY = "https://calendly.com/rebellsystem/rebellsystem";
+  // Leer ("") setzen -> alle Buttons fallen auf mailto:emilio@rebellsystem.com zurueck.
+  // =====================================================
   document.querySelectorAll('.js-book').forEach(function(el){
     var subj = encodeURIComponent(el.getAttribute('data-mail-subject') || 'Anfrage Signal-Leads');
     if (CALENDLY) { el.setAttribute('href', CALENDLY); el.setAttribute('target','_blank'); el.setAttribute('rel','noopener'); }

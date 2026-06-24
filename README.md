@@ -7,14 +7,8 @@ Statische, eigenständige Landingpage für das Produkt **„B2B-Leads mit echtem
 - `impressum.html` / `datenschutz.html` — Rechtstexte.
 - `.nojekyll` — verhindert Jekyll-Verarbeitung bei GitHub Pages.
 
-## Vor dem Livegang — eine Zeile anpassen
-In `index.html` ganz unten im `<script>`:
-
-```js
-const CALENDLY = ""; // -> hier deinen echten Calendly-Link eintragen
-```
-
-Solange leer, fallen alle „Termin buchen"-Buttons sauber auf `mailto:emilio@rebellsystem.com` zurück.
+## Calendly
+Der „Termin buchen"-Link ist gesetzt auf `https://calendly.com/rebellsystem/rebellsystem` (in `index.html` unten im `<script>`, Konstante `CALENDLY`). Auf `""` setzen, falls alle Buttons stattdessen per E-Mail (`mailto:emilio@rebellsystem.com`) laufen sollen.
 
 ## GitHub Pages aktivieren
 1. Repo `rebellmitherz/leads` pushen (siehe unten).
