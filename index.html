@@ -8,6 +8,7 @@
 <meta property="og:title" content="Rebellsystem Signal-Leads — Firmen, die JETZT kaufen wollen">
 <meta property="og:description" content="B2B-Leads mit nachprüfbarem Kaufsignal + Kaufbereitschafts-Analyse + fertigem Anruf-Briefing je Lead. 7-Punkte-Gate, Beleg-Link je Lead. Kostenloser Beispiel-Lead. Ab 500 €.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#06080c">
 <style>
   :root{
     --bg:#06080c; --bg2:#0a0e14; --surface:#0f141b; --surface2:#131a23;
@@ -316,6 +317,17 @@
   .foot a{color:var(--muted)}.foot a:hover{color:var(--text)}
   .foot-links{display:flex;gap:22px;flex-wrap:wrap}
 
+  /* sticky mobile cta */
+  .mobile-cta{display:none}
+  @media(max-width:920px){
+    .mobile-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;
+       padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+       background:rgba(6,8,12,.92);backdrop-filter:blur(14px);border-top:1px solid var(--border2)}
+    .mobile-cta .btn{flex:1;justify-content:center;padding:13px 16px;font-size:14.5px}
+    .mobile-cta .btn-ghost{flex:0 0 auto}
+    footer{padding-bottom:110px}
+  }
+
   /* reveal */
   .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
   .rv.in{opacity:1;transform:none}
@@ -339,6 +351,9 @@
   @media(max-width:560px){.flow{grid-template-columns:1fr}}
   @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Woher kommen die Leads?", "acceptedAnswer": {"@type": "Answer", "text": "Aus öffentlich zugänglichen Kaufsignalen — z. B. aktiven Stellenanzeigen, Expansions- und Wachstumshinweisen. Jeder Lead trägt einen nachprüfbaren Beleg-Link zur Originalquelle."}}, {"@type": "Question", "name": "Wie „frisch\" sind die Signale?", "acceptedAnswer": {"@type": "Answer", "text": "Wir liefern Signale mit Beleg, der in der Regel ≤ 90 Tage alt ist. Das Alter steht an jedem Lead — du siehst sofort, wie aktuell der Kaufmoment ist."}}, {"@type": "Question", "name": "Was unterscheidet euch von gekauften Adresslisten?", "acceptedAnswer": {"@type": "Answer", "text": "Adresslisten sind kalt und beliebig. Wir liefern Firmen mit konkretem, belegtem Kaufmoment und Analyse. Jeder Lead passiert ein hartes 7-Punkte-Gate — lieber 8 echte als 39 wackelige."}}, {"@type": "Question", "name": "Bekomme ich echte Ansprechpartner und Kontaktdaten?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, wo verfügbar: echte Firmen-Website, Telefon/Mobil und — wenn vorhanden — eine persönliche E-Mail. Reine Sammel-Adressen (info@) weisen wir ehrlich als solche aus und verkaufen sie nicht als „persönlich\"."}}, {"@type": "Question", "name": "Was ist das „Anruf-Briefing\"?", "acceptedAnswer": {"@type": "Answer", "text": "Zu jedem Signal-Lead bekommst du ein kompaktes Briefing: ein Firmen-Kurzprofil (was die Firma macht, Branche, Größenordnung), einen Gesprächsöffner, der genau auf das belegte Kaufsignal zugeschnitten ist, und die wahrscheinlichsten Einwände mit passender Antwort — zusätzlich als druckfertiges PDF je Lead. So gehst du vorbereitet ins Gespräch, statt vor jedem Anruf selbst zu recherchieren."}}, {"@type": "Question", "name": "Bekomme ich auch fertige Briefe für die Leads?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Zu jedem Lead erstellen wir ein versandfertiges, auf das Kaufsignal personalisiertes Anschreiben als PDF — mit Anschrift, Betreff und Text. Du druckst und sendest es einfach, oder wir übernehmen Druck und postalischen Versand auf Wunsch. Adressierte Briefwerbung an Unternehmen ist im B2B grundsätzlich auch ohne vorherige Einwilligung zulässig — anders als Kalt-Mail oder -Anruf. Physische Post hat im B2B kaum Wettbewerb im Briefkasten und keinen Spam-Filter."}}, {"@type": "Question", "name": "Was, wenn ein Lead nicht passt?", "acceptedAnswer": {"@type": "Answer", "text": "Sollte ein gelieferter Lead das 7-Punkte-Gate nachweislich verfehlen oder unzustellbar sein, ersetzen wir ihn kostenlos (Nachlieferung). Und du startest ohnehin mit einem kostenlosen Beispiel-Lead vorab — du prüfst die Qualität vor dem Kauf."}}, {"@type": "Question", "name": "Ist das DSGVO-konform?", "acceptedAnswer": {"@type": "Answer", "text": "Wir arbeiten mit öffentlich verfügbaren Unternehmensinformationen im B2B-Kontext und versenden keine Massenmails in deinem Namen. Den rechtssicheren Erstkontakt führst du selbst."}}, {"@type": "Question", "name": "Gibt es ein Abo oder versteckte Kosten?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Du zahlst transparent pro Lieferung (ab 500 €). Kein Abo, keine automatische Verlängerung, keine versteckten Gebühren. Laufende Belieferung gibt es nur, wenn du sie aktiv vereinbarst."}}, {"@type": "Question", "name": "Wie schnell bekomme ich die Leads?", "acceptedAnswer": {"@type": "Answer", "text": "Nach dem Erstgespräch und der Festlegung von Branche + Signal in der Regel innerhalb weniger Werktage — als Lieferportal-Link und CSV."}}]}, {"@type": "Service", "name": "Rebellsystem Signal-Leads", "serviceType": "B2B-Leadgenerierung mit nachprüfbaren Kaufsignalen", "provider": {"@type": "Organization", "name": "Rebell System", "email": "emilio@rebellsystem.com"}, "areaServed": "DACH", "description": "B2B-Leads mit nachprüfbarem Kaufsignal, 7-Punkte-Prüfung, Anruf-Briefing und versandfertigem Brief je Lead.", "offers": {"@type": "Offer", "priceCurrency": "EUR", "price": "500", "description": "Ab 500 € pro Lieferung, kein Abo."}}]}
+</script>
 </head>
 <body>
 
@@ -594,7 +609,7 @@
       </table>
     </div>
     <div class="dl-row">
-      <a class="btn btn-primary" href="beispiel-leads.csv" download>⬇️ Muster-Leads als CSV herunterladen</a>
+      <a class="btn btn-primary" href="beispiel-leads.csv?src=beispiel_section" download>⬇️ Muster-Leads als CSV herunterladen</a>
       <a class="btn btn-ghost js-book" data-mail-subject="Kostenloser Beispiel-Lead aus meiner Branche">Kostenlosen Beispiel-Lead aus meiner Branche</a>
     </div>
     <p class="smallnote">Muster zur Veranschaulichung — Firmen anonymisiert. Jeder echte Lead kommt zusätzlich mit komplettem Anruf-Briefing.
@@ -816,12 +831,18 @@
         und du bekommst einen kostenlosen Beispiel-Lead. Geprüfte Leads ab 500 €.</p>
       <div class="cta-row">
         <a class="btn btn-primary js-book" data-mail-subject="Termin + Beispiel-Lead – Signal-Leads">📅 Termin sichern &amp; Beispiel-Lead erhalten</a>
-        <a class="btn btn-ghost" href="beispiel-leads.csv" download>⬇️ Muster-CSV ansehen</a>
+        <a class="btn btn-ghost" href="beispiel-leads.csv?src=final_cta" download>⬇️ Muster-CSV ansehen</a>
       </div>
       <p style="color:var(--muted2);font-size:13px;margin-top:18px">Kein Abo · Nachlieferung bei Gate-Fail · 100 % DSGVO-konform</p>
     </div>
   </div>
 </section>
+
+<!-- Sticky Mobile CTA (nur <920px sichtbar) -->
+<div class="mobile-cta">
+  <a class="btn btn-primary js-book" data-mail-subject="Termin + Beispiel-Lead – Signal-Leads">📅 Termin sichern</a>
+  <a class="btn btn-ghost" href="beispiel-leads.csv?src=mobile_bar" download>⬇️ CSV</a>
+</div>
 
 <footer>
   <div class="wrap foot">
@@ -830,6 +851,7 @@
       <a href="mailto:emilio@rebellsystem.com">emilio@rebellsystem.com</a>
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a href="#top" id="totop">↑ Nach oben</a>
     </div>
     <div style="color:var(--muted2);font-size:13px">© <span id="yr"></span> Rebell System · B2B</div>
   </div>
