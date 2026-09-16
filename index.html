@@ -694,7 +694,7 @@
 <script>
   const CALENDLY = "https://calendly.com/rebellsystem/rebellsystem";
   document.querySelectorAll('.js-book').forEach(function(el){
-    var subj = encodeURIComponent(el.getAttribute('data-mail-subject') || 'Anfrage Kaufanlass-Leads');
+    var subj = encodeURIComponent(el.getAttribute('data-mail-subject') || 'Anfrage Signalbasierte B2B-Opportunities');
     if (CALENDLY) { el.setAttribute('href', CALENDLY); el.setAttribute('target','_blank'); el.setAttribute('rel','noopener'); }
     else { el.setAttribute('href', 'mailto:emilio@rebellsystem.com?subject=' + subj); }
   });
