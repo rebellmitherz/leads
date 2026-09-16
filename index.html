@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rebellsystem Signal-Leads — Firmen, die JETZT kaufen wollen</title>
-<meta name="description" content="Wir finden Firmen mit nachprüfbarem Kaufsignal (neue Vertriebsjobs, Team-Ausbau, Marketing-Investitionen), prüfen jeden Lead durch ein hartes 7-Punkte-Gate und liefern pro Lead eine belegte Kaufintention — inkl. fertigem Anruf-Briefing (Gesprächsöffner, Firmen-Kurzprofil, Einwand-Konter) und versandfertigem Brief je Lead. Kostenloser Beispiel-Lead. Ab 500 €.">
-<meta property="og:title" content="Rebellsystem Signal-Leads — Firmen, die JETZT kaufen wollen">
-<meta property="og:description" content="B2B-Leads mit nachprüfbarem Kaufsignal + Kaufbereitschafts-Analyse + fertigem Anruf-Briefing je Lead. 7-Punkte-Gate, Beleg-Link je Lead. Kostenloser Beispiel-Lead. Ab 500 €.">
+<title>Kaufanlass-Leads — Firmen, die JETZT kaufen wollen</title>
+<meta name="description" content="Nicht Signale. Sondern geprüfte Kaufanlässe. Wir finden Firmen mit belegtem Grund, warum JETZT gekauft wird — kein vages Signal, sondern ein nachprüfbarer Anlass. Jeder Lead durch ein 7-Punkte-Gate. Mit fertigem Anruf-Briefing und Brief. 3 Leads kostenlos. Pilot 30 Leads 250 €.">
+<meta property="og:title" content="Kaufanlass-Leads — Firmen, die JETZT kaufen wollen">
+<meta property="og:description" content="B2B-Leads mit geprüftem Kaufanlass + Beleg + fertigem Anruf-Briefing. 3 kostenlos testen. Pilot 30 Leads 250 €.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#06080c">
 <style>
@@ -26,7 +26,6 @@
     font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Inter,system-ui,sans-serif;
     line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;
   }
-  /* ---- animated futuristic backdrop ---- */
   body::before{
     content:""; position:fixed; inset:0; z-index:-2;
     background:
@@ -53,7 +52,6 @@
        box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2.4s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.55)}70%{box-shadow:0 0 0 12px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
 
-  /* ---- nav ---- */
   header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);
          background:rgba(6,8,12,.72);border-bottom:1px solid var(--border)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
@@ -73,7 +71,6 @@
   .nav .btn{padding:10px 18px;font-size:14px}
   .burger{display:none;background:none;border:0;color:var(--text);font-size:26px;cursor:pointer}
 
-  /* ---- hero ---- */
   .hero{padding:80px 0 64px;position:relative}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
   h1{font-size:clamp(34px,5.2vw,60px);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin:20px 0 18px}
@@ -86,7 +83,6 @@
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   .hero-note{margin-top:18px;color:var(--muted2);font-size:13.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 
-  /* ---- floating lead card mockup ---- */
   .mock{position:relative}
   .mock-glow{position:absolute;inset:-30px;background:radial-gradient(circle at 60% 30%,rgba(34,211,238,.22),transparent 60%);filter:blur(20px);z-index:0}
   .card{position:relative;z-index:1;background:linear-gradient(180deg,var(--surface2),var(--surface));
@@ -105,7 +101,6 @@
         border:1px solid rgba(34,211,238,.22);border-radius:6px;padding:2px 8px;margin-top:3px}
   .chip.fresh{color:var(--emerald);background:rgba(52,211,153,.09);border-color:rgba(52,211,153,.22)}
 
-  /* ---- generic sections ---- */
   section{padding:72px 0;position:relative}
   .eyebrow{color:var(--cyan);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
   h2{font-size:clamp(28px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:800;margin-bottom:16px}
@@ -113,13 +108,11 @@
   .center{text-align:center;margin:0 auto}
   .center .sub{margin-left:auto;margin-right:auto}
 
-  /* trust strip */
   .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
   .stat{background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:14px;padding:20px}
   .stat .n{font-size:26px;font-weight:800;letter-spacing:-.02em}
   .stat .l{color:var(--muted);font-size:13.5px;margin-top:4px}
 
-  /* generic cards grid */
   .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
   .feat{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
@@ -134,10 +127,8 @@
   .feat .sig{display:inline-block;margin-top:11px;font-size:12px;color:var(--cyan);
         background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.2);border-radius:6px;padding:3px 9px}
 
-  /* problem cards (red accent) */
   .prob .ic{background:rgba(248,113,113,.08);border-color:rgba(248,113,113,.2);color:var(--red)}
 
-  /* comparison table */
   .cmp{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:rgba(255,255,255,.02)}
   .cmp table{width:100%;border-collapse:collapse}
   .cmp th,.cmp td{padding:15px 18px;text-align:left;font-size:14.5px;border-bottom:1px solid var(--border);vertical-align:top}
@@ -150,7 +141,6 @@
   .cmp td.us::before{content:"✓ ";color:var(--emerald);font-weight:800}
   .cmp td.old::before{content:"✕ ";color:var(--red);font-weight:800;opacity:.7}
 
-  /* steps / method timeline */
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
   .step{position:relative;padding-top:8px}
   .step .num{font-size:14px;font-weight:800;color:#04110d;background:linear-gradient(100deg,var(--cyan),var(--emerald));
@@ -164,14 +154,12 @@
   .fcell h4{font-size:15px;font-weight:700;margin-bottom:5px}
   .fcell p{font-size:13px;color:var(--muted)}
 
-  /* gate checklist */
   .gate{display:grid;grid-template-columns:1fr 1fr;gap:14px 34px;margin-top:10px}
   .check{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--border)}
   .check .tick{flex:0 0 auto;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;
         background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.35);color:var(--emerald);font-weight:800;font-size:14px}
   .check b{font-weight:600} .check p{color:var(--muted);font-size:13.5px;margin-top:2px}
 
-  /* example leads table */
   .leadtbl{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:rgba(255,255,255,.02);overflow-x:auto}
   .leadtbl table{width:100%;border-collapse:collapse;min-width:680px}
   .leadtbl th,.leadtbl td{padding:13px 15px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--border);white-space:nowrap}
@@ -184,7 +172,6 @@
   .smallnote{font-size:13px;color:var(--muted2);margin-top:14px}
   .dl-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:24px}
 
-  /* roi calculator */
   .roi{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;
         border:1px solid var(--border2);border-radius:var(--r);padding:30px;
         background:radial-gradient(70% 120% at 0% 0%,rgba(52,211,153,.08),transparent 60%),var(--surface)}
@@ -196,10 +183,9 @@
   .roi-out .lbl{color:var(--muted);font-size:14px;margin-top:8px}
   .roi-out .sec{color:var(--muted2);font-size:13.5px;margin-top:18px}
 
-  /* pricing */
-  .prices{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+  .prices{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
   .price{position:relative;background:linear-gradient(180deg,var(--surface2),var(--surface));
-        border:1px solid var(--border);border-radius:var(--r);padding:30px 26px;display:flex;flex-direction:column}
+        border:1px solid var(--border);border-radius:var(--r);padding:26px 20px;display:flex;flex-direction:column}
   .price.pop{border-color:transparent;background:
         linear-gradient(var(--surface),var(--surface)) padding-box,
         linear-gradient(120deg,var(--cyan),var(--emerald),var(--violet)) border-box;
@@ -207,20 +193,19 @@
   .price .ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);
         font-size:11px;font-weight:800;letter-spacing:.06em;color:#04110d;
         background:linear-gradient(100deg,var(--cyan),var(--emerald));border-radius:999px;padding:5px 14px;white-space:nowrap}
-  .price h3{font-size:16px;font-weight:700;color:var(--muted);letter-spacing:.02em;text-transform:uppercase}
-  .price .amt{font-size:42px;font-weight:800;letter-spacing:-.03em;margin:10px 0 2px}
-  .price .amt small{font-size:15px;font-weight:600;color:var(--muted2)}
-  .price .per{color:var(--muted2);font-size:13.5px;margin-bottom:14px}
-  .price .roihint{font-size:12.5px;color:var(--emerald);background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.2);
-        border-radius:8px;padding:8px 10px;margin-bottom:18px}
-  .price ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:26px;flex:1}
-  .price li{display:flex;gap:10px;font-size:14.5px;color:var(--text)}
+  .price h3{font-size:15px;font-weight:700;color:var(--muted);letter-spacing:.02em;text-transform:uppercase}
+  .price .amt{font-size:36px;font-weight:800;letter-spacing:-.03em;margin:8px 0 2px}
+  .price .amt small{font-size:14px;font-weight:600;color:var(--muted2)}
+  .price .per{color:var(--muted2);font-size:13px;margin-bottom:10px}
+  .price .roihint{font-size:12px;color:var(--emerald);background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.2);
+        border-radius:8px;padding:7px 10px;margin-bottom:14px}
+  .price ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:20px;flex:1}
+  .price li{display:flex;gap:10px;font-size:14px;color:var(--text)}
   .price li::before{content:"✓";color:var(--emerald);font-weight:800;flex:0 0 auto}
   .price li.dim{color:var(--muted2)} .price li.dim::before{content:"+";color:var(--cyan)}
-  .price .btn{width:100%;justify-content:center}
+  .price .btn{width:100%;justify-content:center;font-size:14px;padding:11px 16px}
   .price-note{text-align:center;color:var(--muted2);font-size:14px;margin-top:24px}
 
-  /* guarantee / risk reversal */
   .guars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .guar{background:linear-gradient(180deg,rgba(52,211,153,.05),rgba(255,255,255,.01));
         border:1px solid rgba(52,211,153,.22);border-radius:var(--r);padding:24px}
@@ -229,7 +214,6 @@
   .guar h3{font-size:17px;font-weight:700;margin-bottom:7px}
   .guar p{color:var(--muted);font-size:14px}
 
-  /* founder card */
   .founder{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;
         border:1px solid var(--border2);border-radius:var(--r);padding:30px;
         background:radial-gradient(80% 130% at 100% 0%,rgba(167,139,250,.1),transparent 60%),var(--surface)}
@@ -239,11 +223,9 @@
   .founder .who{margin-top:12px;color:var(--muted);font-size:14px}
   .founder .who b{color:var(--text)}
 
-  /* honest proof note */
   .proofnote{border:1px dashed var(--border2);border-radius:14px;padding:18px 22px;margin-top:26px;
         color:var(--muted);font-size:14.5px;background:rgba(255,255,255,.015)}
 
-  /* anruf-briefing showcase */
   .brief-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:10px}
   .brief-list{list-style:none;display:flex;flex-direction:column;gap:18px}
   .brief-list li{display:flex;gap:14px;align-items:flex-start}
@@ -268,7 +250,6 @@
   .brief-card .bc-q span{color:var(--muted);display:block;margin-top:2px}
   .brief-card .bc-foot{margin-top:18px;padding-top:14px;border-top:1px solid var(--border);
         font-size:12.5px;color:var(--emerald);display:flex;align-items:center;gap:8px}
-  /* brief / letter paper mock */
   .letter{position:relative;background:#f6f4ee;color:#1a2230;border-radius:12px;padding:26px 24px 30px;
         box-shadow:0 30px 80px rgba(0,0,0,.55);font-size:12.5px;line-height:1.65;border:1px solid rgba(0,0,0,.06)}
   .letter .lt-tag{position:absolute;top:14px;right:14px;font-size:10px;font-weight:800;letter-spacing:.05em;
@@ -281,7 +262,6 @@
   .letter .lt-hl{background:rgba(34,211,238,.22);padding:1px 3px;border-radius:3px;color:#0f3b44;font-weight:600}
   .letter .lt-sig{margin-top:6px;color:#374151}
 
-  /* testimonials (echte, anonymisierte Kundenstimmen) */
   .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:10px}
   .qcard{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
         border:1px solid var(--border);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;
@@ -292,7 +272,6 @@
   .qcard .who{margin-top:16px;padding-top:14px;border-top:1px solid var(--border);font-size:13px;color:var(--muted)}
   .qcard .who b{color:var(--text);display:block;font-size:14px}
 
-  /* faq */
   .faq{max-width:820px;margin:0 auto}
   details{border:1px solid var(--border);border-radius:14px;padding:4px 22px;margin-bottom:12px;background:rgba(255,255,255,.02)}
   details[open]{border-color:var(--border2)}
@@ -302,7 +281,6 @@
   details[open] summary::after{transform:rotate(45deg)}
   details p{color:var(--muted);font-size:15px;padding:0 0 18px}
 
-  /* final cta */
   .cta-box{position:relative;overflow:hidden;border:1px solid var(--border2);border-radius:26px;
         padding:60px 40px;text-align:center;
         background:radial-gradient(80% 120% at 50% 0%,rgba(34,211,238,.14),transparent 60%),var(--surface)}
@@ -317,8 +295,10 @@
   .foot a{color:var(--muted)}.foot a:hover{color:var(--text)}
   .foot-links{display:flex;gap:22px;flex-wrap:wrap}
 
-  /* sticky mobile cta */
   .mobile-cta{display:none}
+  @media(max-width:1050px){
+    .prices{grid-template-columns:repeat(2,1fr)}
+  }
   @media(max-width:920px){
     .mobile-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;
        padding:12px 16px calc(12px + env(safe-area-inset-bottom));
@@ -326,13 +306,6 @@
     .mobile-cta .btn{flex:1;justify-content:center;padding:13px 16px;font-size:14.5px}
     .mobile-cta .btn-ghost{flex:0 0 auto}
     footer{padding-bottom:110px}
-  }
-
-  /* reveal */
-  .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-  .rv.in{opacity:1;transform:none}
-
-  @media(max-width:920px){
     .hero-grid{grid-template-columns:1fr;gap:40px}
     .mock{max-width:420px;margin:0 auto}
     .strip{grid-template-columns:1fr 1fr}
@@ -346,28 +319,27 @@
     .nav-links{display:none}
     .burger{display:block}
     .nav-links.open{display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;
-        gap:18px;padding:24px;background:var(--bg2);border-bottom:1px solid var(--border)}
+        gap:18px;padding:24px;background:var(--bg2);border-bottom:1px solid var(--border2)}
   }
-  @media(max-width:560px){.flow{grid-template-columns:1fr}}
+  @media(max-width:560px){.prices{grid-template-columns:1fr}.flow{grid-template-columns:1fr}}
   @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Woher kommen die Leads?", "acceptedAnswer": {"@type": "Answer", "text": "Aus öffentlich zugänglichen Kaufsignalen — z. B. aktiven Stellenanzeigen, Expansions- und Wachstumshinweisen. Jeder Lead trägt einen nachprüfbaren Beleg-Link zur Originalquelle."}}, {"@type": "Question", "name": "Wie „frisch\" sind die Signale?", "acceptedAnswer": {"@type": "Answer", "text": "Wir liefern Signale mit Beleg, der in der Regel ≤ 90 Tage alt ist. Das Alter steht an jedem Lead — du siehst sofort, wie aktuell der Kaufmoment ist."}}, {"@type": "Question", "name": "Was unterscheidet euch von gekauften Adresslisten?", "acceptedAnswer": {"@type": "Answer", "text": "Adresslisten sind kalt und beliebig. Wir liefern Firmen mit konkretem, belegtem Kaufmoment und Analyse. Jeder Lead passiert ein hartes 7-Punkte-Gate — lieber 8 echte als 39 wackelige."}}, {"@type": "Question", "name": "Bekomme ich echte Ansprechpartner und Kontaktdaten?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, wo verfügbar: echte Firmen-Website, Telefon/Mobil und — wenn vorhanden — eine persönliche E-Mail. Reine Sammel-Adressen (info@) weisen wir ehrlich als solche aus und verkaufen sie nicht als „persönlich\"."}}, {"@type": "Question", "name": "Was ist das „Anruf-Briefing\"?", "acceptedAnswer": {"@type": "Answer", "text": "Zu jedem Signal-Lead bekommst du ein kompaktes Briefing: ein Firmen-Kurzprofil (was die Firma macht, Branche, Größenordnung), einen Gesprächsöffner, der genau auf das belegte Kaufsignal zugeschnitten ist, und die wahrscheinlichsten Einwände mit passender Antwort — zusätzlich als druckfertiges PDF je Lead. So gehst du vorbereitet ins Gespräch, statt vor jedem Anruf selbst zu recherchieren."}}, {"@type": "Question", "name": "Bekomme ich auch fertige Briefe für die Leads?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Zu jedem Lead erstellen wir ein versandfertiges, auf das Kaufsignal personalisiertes Anschreiben als PDF — mit Anschrift, Betreff und Text. Du druckst und sendest es einfach, oder wir übernehmen Druck und postalischen Versand auf Wunsch. Adressierte Briefwerbung an Unternehmen ist im B2B grundsätzlich auch ohne vorherige Einwilligung zulässig — anders als Kalt-Mail oder -Anruf. Physische Post hat im B2B kaum Wettbewerb im Briefkasten und keinen Spam-Filter."}}, {"@type": "Question", "name": "Was, wenn ein Lead nicht passt?", "acceptedAnswer": {"@type": "Answer", "text": "Sollte ein gelieferter Lead das 7-Punkte-Gate nachweislich verfehlen oder unzustellbar sein, ersetzen wir ihn kostenlos (Nachlieferung). Und du startest ohnehin mit einem kostenlosen Beispiel-Lead vorab — du prüfst die Qualität vor dem Kauf."}}, {"@type": "Question", "name": "Ist das DSGVO-konform?", "acceptedAnswer": {"@type": "Answer", "text": "Wir arbeiten mit öffentlich verfügbaren Unternehmensinformationen im B2B-Kontext und versenden keine Massenmails in deinem Namen. Den rechtssicheren Erstkontakt führst du selbst."}}, {"@type": "Question", "name": "Gibt es ein Abo oder versteckte Kosten?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Du zahlst transparent pro Lieferung (ab 500 €). Kein Abo, keine automatische Verlängerung, keine versteckten Gebühren. Laufende Belieferung gibt es nur, wenn du sie aktiv vereinbarst."}}, {"@type": "Question", "name": "Wie schnell bekomme ich die Leads?", "acceptedAnswer": {"@type": "Answer", "text": "Nach dem Erstgespräch und der Festlegung von Branche + Signal in der Regel innerhalb weniger Werktage — als Lieferportal-Link und CSV."}}]}, {"@type": "Service", "name": "Rebellsystem Signal-Leads", "serviceType": "B2B-Leadgenerierung mit nachprüfbaren Kaufsignalen", "provider": {"@type": "Organization", "name": "Rebell System", "email": "emilio@rebellsystem.com"}, "areaServed": "DACH", "description": "B2B-Leads mit nachprüfbarem Kaufsignal, 7-Punkte-Prüfung, Anruf-Briefing und versandfertigem Brief je Lead.", "offers": {"@type": "Offer", "priceCurrency": "EUR", "price": "500", "description": "Ab 500 € pro Lieferung, kein Abo."}}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was ist der Unterschied zwischen einem Signal und einem Kaufanlass?", "acceptedAnswer": {"@type": "Answer", "text": "Ein Signal sagt: 'könnte etwas sein'. Ein Kaufanlass sagt: 'hier ist der Grund, warum diese Firma JETZT kauft'. Wir liefern keinen vagen Hinweis, sondern einen geprüften, belegten Anlass — mit Quellen-Link, Datum und Begründung."}}, {"@type": "Question", "name": "Woher kommen die Kaufanlässe?", "acceptedAnswer": {"@type": "Answer", "text": "Aus öffentlich zugänglichen Quellen: Stellenanzeigen, Expansionsmeldungen, Handelsregistereinträge, Standorteröffnungen. Jeder Kaufanlass trägt einen nachprüfbaren Beleg-Link."}}, {"@type": "Question", "name": "Kann ich kostenlos testen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Du bekommst 3 Leads kostenlos — ohne Kreditkarte, ohne Risiko. Sieh selbst, ob die Qualität stimmt. Erst dann kaufst du."}}, {"@type": "Question", "name": "Was unterscheidet euch von gekauften Adresslisten?", "acceptedAnswer": {"@type": "Answer", "text": "Adresslisten sind kalt und beliebig. Wir liefern Firmen mit konkretem, belegtem Kaufanlass und Analyse. Jeder Lead passiert ein hartes 7-Punkte-Gate — lieber 8 echte als 39 wackelige."}}, {"@type": "Question", "name": "Bekomme ich echte Ansprechpartner?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, wo verfügbar: echte Firmen-Website, Telefon/Mobil und — wenn vorhanden — eine persönliche E-Mail. Reine Sammel-Adressen (info@) weisen wir ehrlich als solche aus."}}, {"@type": "Question", "name": "Was ist das Anruf-Briefing?", "acceptedAnswer": {"@type": "Answer", "text": "Zu jedem Kaufanlass-Lead bekommst du ein kompaktes Briefing: Firmen-Kurzprofil, einen Gesprächsöffner, der genau auf den belegten Kaufanlass zugeschnitten ist, und die wahrscheinlichsten Einwände mit passender Antwort."}}, {"@type": "Question", "name": "Wie schnell bekomme ich die Leads?", "acceptedAnswer": {"@type": "Answer", "text": "Nach Festlegung von Branche + Signal in der Regel innerhalb weniger Werktage — als Lieferportal-Link und CSV."}}]}]}
 </script>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <div class="logo">Rebell<b>system</b> <span class="x">/ Signal-Leads</span></div>
+    <div class="logo">Rebell<b>system</b> <span class="x">/ Kaufanlass-Leads</span></div>
     <nav class="nav-links" id="navlinks">
-      <a href="#signale">Kaufsignale</a>
+      <a href="#unterschied">Kaufanlass vs. Signal</a>
+      <a href="#anlaesse">Kaufanlässe</a>
       <a href="#briefing">Anruf-Briefing</a>
-      <a href="#brief">Brief je Lead</a>
-      <a href="#beispiel">Beispiel-Leads</a>
       <a href="#preise">Preise</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-primary js-book" data-mail-subject="Termin – Signal-Leads">Termin + Beispiel-Lead</a>
+      <a class="btn btn-primary js-book" data-mail-subject="3 kostenlose Leads – Kaufanlass-Leads">3 Leads kostenlos</a>
     </nav>
     <button class="burger" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
   </div>
@@ -377,21 +349,19 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="rv in">
-      <span class="pill"><span class="dot"></span> B2B-Leads mit nachprüfbarem Kaufsignal</span>
-      <h1>Finde Firmen, die <span class="grad">JETZT kaufen wollen</span> — dank nachprüfbarer Kaufsignale.</h1>
-      <p class="lead">Wir finden Signale wie neue Vertriebsjobs, Team-Erweiterungen und Marketing-Investitionen,
-        prüfen jeden Treffer von Hand und liefern dir pro Lead eine <b style="color:var(--text)">belegte Kaufintention</b>
-        — inklusive fertigem <b style="color:var(--text)">Anruf-Briefing</b> und einem versandfertigen <b style="color:var(--text)">Brief</b> je Lead. Statt einer weiteren kalten Adressliste.</p>
+      <span class="pill"><span class="dot"></span> 3 Leads kostenlos testen</span>
+      <h1>Nicht Signale. Sondern <span class="grad">geprüfte Kaufanlässe</span>. Mit Beleg.</h1>
+      <p class="lead">Ein Signal sagt: <em>könnte etwas sein</em>. Ein Kaufanlass sagt: <em>hier ist der Grund, warum diese Firma JETZT kauft</em>. Wir finden den konkreten Anlass, prüfen ihn von Hand und liefern dir pro Lead den nachprüfbaren Beleg — inklusive fertigem Anruf-Briefing und versandfertigem Brief.</p>
       <ul class="hero-bul">
-        <li><span class="hi">✓</span><div><b>Geprüfte Signale &amp; Belege</b> <span>— 7-Punkte-Gate, Beleg-Link und Begründung pro Lead.</span></div></li>
-        <li><span class="hi">✓</span><div><b>Echte Entscheider &amp; ICP-Fit</b> <span>— Telefon/Mobil oder persönliche Mail, kein info@, nur passende Branchen.</span></div></li>
-        <li><span class="hi">✓</span><div><b>Fertiges Anruf-Briefing je Lead</b> <span>— Gesprächsöffner, Firmen-Kurzprofil und Einwand-Konter. Du weißt sofort, was du sagst.</span></div></li>
+        <li><span class="hi">✓</span><div><b>Geprüfter Kaufanlass statt vages Signal</b> <span>— Jeder Lead mit Beleg-Link, Datum und Begründung.</span></div></li>
+        <li><span class="hi">✓</span><div><b>Echte Entscheider &amp; ICP-Fit</b> <span>— Telefon/Mobil oder persönliche Mail.</span></div></li>
+        <li><span class="hi">✓</span><div><b>Fertiges Anruf-Briefing je Lead</b> <span>— Gesprächsöffner, Firmen-Kurzprofil und Einwand-Konter.</span></div></li>
       </ul>
       <div class="hero-cta">
-        <a class="btn btn-primary js-book" data-mail-subject="Termin + Beispiel-Lead – Signal-Leads">📅 Kostenlosen Termin sichern &amp; Beispiel-Lead erhalten</a>
-        <a class="btn btn-ghost" href="#beispiel">Beispiel-Leads ansehen</a>
+        <a class="btn btn-primary js-book" data-mail-subject="3 kostenlose Leads – Kaufanlass-Leads">🎁 3 Leads kostenlos erhalten</a>
+        <a class="btn btn-ghost" href="#preise">Pilot: 30 Leads für 250 €</a>
       </div>
-      <div class="hero-note"><span class="dot"></span> 100 % DSGVO-konform · jeder Lead mit nachprüfbarem Beleg · Signal-Frische ≤ 90 Tage</div>
+      <div class="hero-note"><span class="dot"></span> 3 Leads kostenlos · 30er-Pilot ab 250 € · Kein Abo · Beleg-Link an jedem Lead</div>
     </div>
 
     <div class="mock rv in">
@@ -400,119 +370,91 @@
         <div class="card-top">
           <div>
             <div class="firma">Maschinenbau GmbH <span style="color:var(--muted2);font-size:12px">(anonymisiert)</span></div>
-            <div class="score">Kaufbereitschaft: <b style="color:var(--emerald)">hoch · 92/100</b></div>
+            <div class="score">Kaufanlass: <b style="color:var(--emerald)">Vertriebsausbau · 92/100</b></div>
           </div>
           <span class="badge-prem">★ GEPRÜFT</span>
         </div>
         <div class="row"><span class="i">📈</span><div><b>Stellt aktiv Vertrieb ein</b>
           <div><span class="chip">Quelle: Stepstone</span> <span class="chip fresh">vor 3 Tagen</span></div></div></div>
         <div class="row"><span class="i">👤</span><div><b>A. Berg</b> <span>· Vertriebsleitung</span>
-          <div><span>📱 Mobil · persönliche E-Mail (kein info@)</span></div></div></div>
-        <div class="row"><span class="i">🌐</span><div><span>echte Firmen-Website · belastbarer Kontakt</span></div></div>
-        <div class="row"><span class="i">🎯</span><div><span>ICP-Fit: Maschinenbau · sendefähig · Beleg-Link hinterlegt</span></div></div>
+          <div><span>📱 Mobil · persönliche E-Mail</span></div></div></div>
+        <div class="row"><span class="i">🔗</span><div><span><b>Beleg-Link:</b> zum Original-Inserat → nachprüfbar</span></div></div>
+        <div class="row"><span class="i">🎯</span><div><span>ICP-Fit: Maschinenbau · sendefähig</span></div></div>
         <div class="row"><span class="i">📋</span><div><b>Anruf-Briefing inklusive</b> <span>· Gesprächsöffner + Einwand-Konter + PDF</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ TRUST STRIP (ehrlich, aus echter Gate-Logik) ============ -->
+<!-- ============ TRUST STRIP ============ -->
 <section style="padding-top:0">
   <div class="wrap">
     <div class="strip">
-      <div class="stat rv"><div class="n grad">100 %</div><div class="l">Jeder Lead mit nachprüfbarem Kaufsignal + Beleg-Link</div></div>
-      <div class="stat rv"><div class="n grad">≤ 90 Tage</div><div class="l">Frische des Signals — kein Karteileichen-Recycling</div></div>
+      <div class="stat rv"><div class="n grad">100 %</div><div class="l">Jeder Lead mit geprüftem Kaufanlass + Beleg-Link</div></div>
+      <div class="stat rv"><div class="n grad">≤ 90 Tage</div><div class="l">Frische des Anlasses — kein Karteileichen-Recycling</div></div>
       <div class="stat rv"><div class="n grad">7 Regeln</div><div class="l">Hartes Gate vor jeder Lieferung</div></div>
-      <div class="stat rv"><div class="n grad">0 €</div><div class="l">Beispiel-Lead vorab — du prüfst Qualität vor dem Kauf</div></div>
+      <div class="stat rv"><div class="n grad">3 kostenlos</div><div class="l">Teste die Qualität, bevor du zahlst</div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ PROBLEM ============ -->
-<section id="problem">
+<!-- ============ PROBLEM / DER UNTERSCHIED ============ -->
+<section id="unterschied">
   <div class="wrap">
     <div class="center" style="max-width:720px">
-      <div class="eyebrow">Das Problem</div>
-      <h2>Kaltakquise und gekaufte Listen <span class="grad">verbrennen deine Zeit</span>.</h2>
-      <p class="sub center">Das Problem ist nicht dein Vertrieb — es ist die Liste. Wer ohne Anlass anruft,
-        trifft Firmen ohne Budget, ohne Bedarf, ohne den richtigen Moment.</p>
-    </div>
-    <div class="grid3">
-      <div class="feat prob rv"><div class="ic">🧊</div><h3>Kalt schon beim ersten Kontakt</h3>
-        <p>Adressen ohne Anlass: niedrige Antwortquoten, viele Absagen — dein Team verliert die Motivation.</p></div>
-      <div class="feat prob rv"><div class="ic">⏱️</div><h3>Du weißt nicht, WANN</h3>
-        <p>Ohne Kaufsignal triffst du Firmen, die gerade kein Budget und keinen Bedarf haben. Timing entscheidet.</p></div>
-      <div class="feat prob rv"><div class="ic">🗑️</div><h3>Streuverlust kostet bar Geld</h3>
-        <p>info@-Adressen, veraltete Daten, falsche Branchen. Viele Kontakte, kaum Relevanz — teuer und frustrierend.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VERGLEICH ============ -->
-<section style="background:linear-gradient(180deg,transparent,rgba(34,211,238,.03),transparent)">
-  <div class="wrap">
-    <div class="center" style="max-width:680px">
-      <div class="eyebrow">Der Unterschied</div>
-      <h2>Gekaufte Adressliste vs. <span class="grad">Signal-Lead</span>.</h2>
-      <p class="sub center">Gleiche Frage, ehrlich beantwortet: Was bekommst du wirklich?</p>
+      <div class="eyebrow">Der entscheidende Unterschied</div>
+      <h2>Ein Signal ist ein Hinweis. <span class="grad">Ein Kaufanlass ist der Grund.</span></h2>
+      <p class="sub center">Die Branche redet von „Intent-Signalen" — vagen Datenpunkten, die irgendwo im Netz aufgesammelt wurden. Wir machen etwas anderes: wir finden den konkreten, nachprüfbaren Anlass, warum eine Firma genau JETZT etwas kauft. Das ist der Unterschied zwischen einer heißen Spur und einer Adresse auf einer Liste.</p>
     </div>
     <div class="cmp rv">
       <table>
-        <thead><tr><th>Kriterium</th><th>Gekaufte Adressliste</th><th class="us">Signal-Lead</th></tr></thead>
+        <thead><tr><th></th><th>Intent-Signal (anderer Anbieter)</th><th class="us">Kaufanlass-Lead (Rebell System)</th></tr></thead>
         <tbody>
-          <tr><td class="k">Aktualität</td><td class="old">Monate bis Jahre alt</td><td class="us">Signal ≤ 90 Tage, Datum an jedem Lead</td></tr>
-          <tr><td class="k">Kaufmoment</td><td class="old">unbekannt — reine Adresse</td><td class="us">belegtes, aktuelles Kaufsignal</td></tr>
-          <tr><td class="k">Beleg</td><td class="old">keiner</td><td class="us">nachprüfbarer Beleg-Link je Lead</td></tr>
-          <tr><td class="k">Kontaktqualität</td><td class="old">oft info@ / Sammeladresse</td><td class="us">Entscheider: Telefon/Mobil o. persönliche Mail (wo verfügbar)</td></tr>
-          <tr><td class="k">Branchen-Fit</td><td class="old">beliebig zusammengewürfelt</td><td class="us">nur passender ICP zu deiner Zielbranche</td></tr>
-          <tr><td class="k">Prüfung</td><td class="old">keine</td><td class="us">7-Punkte-Gate vor Lieferung, sonst kein Versand</td></tr>
-          <tr><td class="k">Zum Anruf bereit?</td><td class="old">nur Name + Nummer — du recherchierst selbst</td><td class="us">fertiges Anruf-Briefing: Opener, Kurzprofil &amp; Einwand-Konter</td></tr>
-          <tr><td class="k">Per Post erreichbar?</td><td class="old">selbst texten &amp; layouten</td><td class="us">fertiger, personalisierter Brief je Lead (PDF)</td></tr>
-          <tr><td class="k">Abrechnung</td><td class="old">Abo / Massenpaket</td><td class="us">pro Lieferung, kein Abo</td></tr>
-          <tr><td class="k">Ergebnis</td><td class="old">viele kalte Kontakte</td><td class="us">weniger Leads — dafür mit echtem Anlass zum Kaufen</td></tr>
+          <tr><td class="k">Was du bekommst</td><td class="old">„Diese Firma sucht nach Thema X" — vager Hinweis</td><td class="us">„Diese Firma stellt Vertrieb ein, Standort Eröffnung Oktober 2026" — konkreter Grund</td></tr>
+          <tr><td class="k">Beleg</td><td class="old">„Basierend auf Algorithmus" — kein nachprüfbarer Link</td><td class="us">Nachprüfbarer Beleg-Link zur Originalquelle</td></tr>
+          <tr><td class="k">Prüfung</td><td class="old">Automatisch, kein menschliches Gate</td><td class="us">7-Punkte-Gate von Hand — jeder Lead, der durchfällt, wird aussortiert</td></tr>
+          <tr><td class="k">Gesprächs-Vorbereitung</td><td class="old">Nur Kontaktdaten</td><td class="us">Fertiges Anruf-Briefing: Opener, Kurzprofil, Einwand-Konter — alles aus dem belegten Anlass abgeleitet</td></tr>
+          <tr><td class="k">Brief</td><td class="old">—</td><td class="us">Versandfertiges Anschreiben je Lead (PDF)</td></tr>
+          <tr><td class="k">Einstieg</td><td class="old">Ab 500 €/Monat, oft mit Abo</td><td class="us">3 Leads kostenlos. Pilot 30 Leads 250 €. Kein Abo.</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="smallnote">Bewusst ehrlich: keine erfundene „Abschlussrate". Den Beweis liefert der Beleg-Link an jedem Lead — und ein kostenloser Beispiel-Lead vorab.</p>
   </div>
 </section>
 
-<!-- ============ SIGNALE ============ -->
-<section id="signale">
+<!-- ============ DIE 6 KAUFANLÄSSE ============ -->
+<section id="anlaesse">
   <div class="wrap">
     <div class="center" style="max-width:720px">
-      <div class="eyebrow">Die 6 Kaufsignale</div>
-      <h2>Wir kaufen nicht nach Adresse ein — wir suchen nach <span class="grad">Kaufmomenten</span>.</h2>
-      <p class="sub center">Ein Unternehmen, das gerade Vertrieb einstellt oder expandiert, hat Budget <i>und</i>
-        Bedarf — genau jetzt. Diese Signale finden wir und belegen sie nachprüfbar.</p>
+      <div class="eyebrow">Die 6 Kaufanlässe</div>
+      <h2>Jeder Anlass ist ein <span class="grad">belegbarer Grund zum Kaufen</span>.</h2>
+      <p class="sub center">Wir suchen nicht nach vagen Signalen, sondern nach konkreten, datierten Ereignissen. Jeder Anlass hat eine Quelle, ein Datum und eine klare Verbindung zu Budget + Bedarf.</p>
     </div>
     <div class="grid3">
-      <div class="feat rv"><div class="ic">📈</div><h3>Stellt aktiv Vertrieb ein</h3><p>Neue Vertriebsstellen = frisches Budget für Outbound und Termine.</p><span class="tag">heißeste Spur</span></div>
-      <div class="feat rv"><div class="ic">🎯</div><h3>Sucht Terminierer / SDR</h3><p>Investiert gerade konkret in Kaltakquise &amp; Pipeline.</p></div>
-      <div class="feat rv"><div class="ic">🚀</div><h3>Wächst / baut Team aus</h3><p>Wachstum heißt Bedarf an Tools, Dienstleistung und Partnern.</p></div>
-      <div class="feat rv"><div class="ic">👔</div><h3>Holt Vertriebs-/Marketingleitung</h3><p>Neue Leitung baut Go-to-Market neu auf — der Moment für Angebote.</p></div>
-      <div class="feat rv"><div class="ic">📣</div><h3>Investiert in Marketing / Leadgen</h3><p>Aktive Nachfrage nach mehr Reichweite und qualifizierten Leads.</p></div>
-      <div class="feat rv"><div class="ic">📍</div><h3>Eröffnet Standort / expandiert</h3><p>Neue Standorte brauchen neue Lieferanten, Services und Kontakte.</p></div>
+      <div class="feat rv"><div class="ic">📈</div><h3>Stellt aktiv Vertrieb ein</h3><p>Neue Vertriebsstellen = frisches Budget für Outbound und Termine. Der konkreteste Kaufanlass überhaupt.</p><span class="tag">härtester Anlass</span></div>
+      <div class="feat rv"><div class="ic">🎯</div><h3>Sucht Terminierer / SDR</h3><p>Investiert gerade konkret in Kaltakquise &amp; Pipeline — sucht Partner, die Termine liefern.</p></div>
+      <div class="feat rv"><div class="ic">🚀</div><h3>Wächst / baut Team aus</h3><p>Wachstum heißt neues Budget, neue Verantwortliche, neuer Bedarf an Dienstleistungen.</p></div>
+      <div class="feat rv"><div class="ic">👔</div><h3>Neue Führung im Vertrieb/Marketing</h3><p>Neue Leitung baut Go-to-Market neu auf — der Moment, um Angebote zu platzieren.</p></div>
+      <div class="feat rv"><div class="ic">📍</div><h3>Eröffnet Standort / expandiert</h3><p>Neue Standorte brauchen neue Lieferanten, Versicherungen, Services — nachprüfbar über Handelsregister oder Presse.</p></div>
+      <div class="feat rv"><div class="ic">🏗️</div><h3>Investiert in Ausstattung / Umbau</h3><p>Investitionen in Räume, Maschinen oder IT sind belegte Ausgaben — und ein Zeichen für Wachstum.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ ANRUF-BRIEFING (das neue Verkaufsargument — in jedem Lead enthalten) ============ -->
+<!-- ============ ANRUF-BRIEFING ============ -->
 <section id="briefing" style="background:linear-gradient(180deg,transparent,rgba(167,139,250,.05),transparent)">
   <div class="wrap">
     <div class="center" style="max-width:780px">
       <div class="eyebrow">In jedem Lead enthalten</div>
       <h2>Du bekommst nicht nur den Lead — <span class="grad">du bekommst das Gespräch</span>.</h2>
-      <p class="sub center">Eine Nummer auf einer Liste sagt dir nicht, was du sagen sollst. Darum liegt jedem Signal-Lead
-        ein fertiges <b style="color:var(--text)">Anruf-Briefing</b> bei: Firmen-Kurzprofil, ein auf das belegte Kaufsignal
-        zugeschnittener Gesprächsöffner und die wahrscheinlichsten Einwände samt Antwort. Du rufst an, ohne zu raten.</p>
+      <p class="sub center">Ein Kaufanlass nützt dir nichts, wenn du nicht weißt, was du sagen sollst. Darum liegt jedem Lead ein fertiges Anruf-Briefing bei: Firmen-Kurzprofil, Gesprächsöffner aus dem belegten Anlass und die wahrscheinlichsten Einwände mit Antwort.</p>
     </div>
     <div class="brief-grid">
       <ul class="brief-list rv">
         <li><span class="bi">🏢</span><div><h3>Firmen-Kurzprofil</h3><p>In rund 5 Zeilen: was die Firma macht, Branche und Größenordnung — du bist im Bilde, bevor es klingelt.</p></div></li>
-        <li><span class="bi">💬</span><div><h3>Gesprächsöffner</h3><p>1–2 Sätze Einstieg, exakt auf das belegte Kaufsignal zugeschnitten. Kein generisches „Ich rufe an, weil …".</p></div></li>
+        <li><span class="bi">💬</span><div><h3>Gesprächsöffner</h3><p>1–2 Sätze Einstieg, exakt auf den belegten Kaufanlass zugeschnitten. Kein generisches „Ich rufe an, weil …".</p></div></li>
         <li><span class="bi">🛡️</span><div><h3>Einwand-Vorbereitung</h3><p>Die wahrscheinlichsten Einwände des Ansprechpartners — mit passender Antwort. Du gerätst nicht ins Stocken.</p></div></li>
-        <li><span class="bi">📄</span><div><h3>Alles auch als PDF</h3><p>Das komplette Briefing zusätzlich als PDF je Lead — direkt verteilbar an dein Vertriebsteam.</p></div></li>
+        <li><span class="bi">📄</span><div><h3>Alles auch als PDF</h3><p>Das komplette Briefing zusätzlich als PDF je Lead — direkt verteilbar an dein Team.</p></div></li>
       </ul>
       <div class="brief-card rv">
         <div class="bc-top">
@@ -520,117 +462,52 @@
           <span class="bc-label">📋 ANRUF-BRIEFING</span>
         </div>
         <h4>Firmen-Kurzprofil</h4>
-        <p class="bc-profil">Mittelständischer Sondermaschinenbauer (Raum Stuttgart), ~120 Mitarbeiter. Fertigt Anlagen für die Automobilzulieferung und baut aktuell den Vertrieb für neue Märkte aus.</p>
-        <h4>Gesprächsöffner</h4>
+        <p class="bc-profil">Mittelständischer Sondermaschinenbauer (Raum Stuttgart), ~120 Mitarbeiter. Baut aktuell den Vertrieb für neue Märkte aus.</p>
+        <h4>Gesprächsöffner (aus dem Kaufanlass)</h4>
         <p class="bc-opener">„Mir ist aufgefallen, dass Sie gerade Ihren Vertrieb verstärken — Neukundengewinnung steht bei Ihnen also ohnehin oben auf der Liste. Genau da setze ich kurz an."</p>
         <h4>Wahrscheinliche Einwände</h4>
         <div class="bc-einw">
-          <div class="bc-q"><b>„Wir haben schon einen Anbieter."</b><span>→ Verständlich, das haben die meisten. Mir geht es um den frischen Vertriebsausbau — genau da lohnt der kurze Vergleich.</span></div>
-          <div class="bc-q"><b>„Schicken Sie mir was per Mail."</b><span>→ Mach ich gern. Damit es passt: Bauen Sie gerade eher Außen- oder Innendienst aus?</span></div>
+          <div class="bc-q"><b>„Wir haben schon einen Anbieter."</b><span>→ Verständlich. Mir geht es um den frischen Vertriebsausbau — genau da lohnt der kurze Vergleich.</span></div>
+          <div class="bc-q"><b>„Schicken Sie mir was per Mail."</b><span>→ Mach ich gern. Bauen Sie gerade eher Außen- oder Innendienst aus?</span></div>
         </div>
         <div class="bc-foot">📄 Liegt zusätzlich als druckfertiges PDF bei</div>
       </div>
     </div>
-    <p class="smallnote">Der Gesprächsöffner wird je Lead aus dem echten, belegten Kaufsignal abgeleitet — nichts Erfundenes, nichts Behauptetes, das nicht in der Quelle steht.</p>
+    <p class="smallnote">Der Gesprächsöffner wird aus dem echten, belegten Kaufanlass abgeleitet — nichts Erfundenes, nichts Behauptetes.</p>
   </div>
 </section>
 
-<!-- ============ BRIEF-VERSAND (zweiter Kanal — versandfertiger Brief je Lead) ============ -->
-<section id="brief">
-  <div class="wrap">
-    <div class="center" style="max-width:800px">
-      <div class="eyebrow">Plus: der Brief, der ankommt</div>
-      <h2>E-Mails landen im Spam. Ein <span class="grad">persönlicher Brief</span> landet auf dem Schreibtisch.</h2>
-      <p class="sub center">Zu jedem Lead bekommst du ein fertiges, auf das belegte Kaufsignal personalisiertes
-        Anschreiben — Anschrift, Betreff, Text, sauberes Layout. Du druckst und sendest, fertig.
-        Den postalischen Versand übernehmen wir auf Wunsch.</p>
-    </div>
-    <div class="brief-grid">
-      <div class="letter rv">
-        <span class="lt-tag">✉️ VERSANDFERTIG</span>
-        <div class="lt-from">Dein Unternehmen · Musterstraße 1 · 12345 Musterstadt</div>
-        <div class="lt-to">Maschinenbau GmbH<span>Herrn A. Berg · Vertriebsleitung</span><span>Industriestraße 4 · 70000 Stuttgart</span></div>
-        <div class="lt-subj">Ihr Vertriebsausbau — ein kurzer Gedanke dazu</div>
-        <p>Sehr geehrter Herr Berg,</p>
-        <p>mir ist aufgefallen, dass Sie aktuell <span class="lt-hl">Ihren Vertrieb verstärken</span> — ein Schritt, der meist genau dann kommt, wenn neue Kunden gewonnen werden sollen.</p>
-        <p>Genau hier setze ich an: [Ihr Angebot in einem Satz]. Ich melde mich in den nächsten Tagen kurz telefonisch — oder Sie erreichen mich direkt unter [Telefon].</p>
-        <p class="lt-sig">Mit besten Grüßen<br>[Ihr Name]</p>
-      </div>
-      <ul class="brief-list rv">
-        <li><span class="bi">✍️</span><div><h3>Auf das Signal personalisiert</h3><p>Das Anschreiben nimmt direkt Bezug auf den belegten Kaufanlass der Firma — kein „Sehr geehrte Damen und Herren".</p></div></li>
-        <li><span class="bi">🖨️</span><div><h3>Versandfertig als PDF</h3><p>Sauberes Anschreiben mit Anschrift, Betreff und Text. Drucken, unterschreiben, ab die Post.</p></div></li>
-        <li><span class="bi">📬</span><div><h3>Der Kanal, der auffällt</h3><p>Physische Post hat kaum Wettbewerb im Briefkasten und keinen Spam-Filter — und ist im B2B kalt zulässig.</p></div></li>
-        <li><span class="bi">🤝</span><div><h3>Versand optional durch uns</h3><p>Auf Wunsch übernehmen wir Druck &amp; postalischen Versand — du musst dich um nichts kümmern.</p></div></li>
-      </ul>
-    </div>
-    <p class="smallnote">Adressierte Briefwerbung an Unternehmen ist im B2B grundsätzlich auch ohne vorherige Einwilligung zulässig — anders als Kalt-Mail oder -Anruf. Den rechtssicheren Versand verantwortest du selbst, oder wir übernehmen ihn auf Wunsch.</p>
-  </div>
-</section>
-
-<!-- ============ UNSER SIGNAL-SYSTEM ("So entsteht ein Lead" — ehrlicher Vertrauensbeweis) ============ -->
+<!-- ============ SYSTEM ============ -->
 <section id="system">
   <div class="wrap">
     <div class="center" style="max-width:760px">
-      <div class="eyebrow">So entsteht ein Lead</div>
-      <h2>Vom öffentlichen Signal zum <span class="grad">belegten, sendefertigen Lead</span>.</h2>
-      <p class="sub center">Das ist kein Marketing-Versprechen, sondern unser tatsächlicher Ablauf — transparent gemacht,
-        weil genau diese Methode der Beweis ist, den du nachprüfen kannst.</p>
+      <div class="eyebrow">So entsteht ein Kaufanlass-Lead</div>
+      <h2>Vom öffentlichen Ereignis zum <span class="grad">belegten, sendefertigen Lead</span>.</h2>
+      <p class="sub center">Kein Black-Box-Algorithmus. Jeder Schritt ist nachvollziehbar — genau deshalb kannst du der Qualität vertrauen.</p>
     </div>
     <div class="flow">
-      <div class="fcell rv"><div class="fn">01 · QUELLEN</div><h4>Signale finden</h4><p>Öffentliche Jobportale, Firmen-News, Wachstums- und Marketing-Hinweise.</p></div>
-      <div class="fcell rv"><div class="fn">02 · MENGE</div><h4>Über-suchen</h4><p>Wir suchen ein Vielfaches der Zielmenge — Reserve für hartes Filtern.</p></div>
-      <div class="fcell rv"><div class="fn">03 · GATE</div><h4>7-Punkte-Prüfung</h4><p>Jeder Lead muss alle 7 Kriterien bestehen, sonst fliegt er raus.</p></div>
-      <div class="fcell rv"><div class="fn">04 · ANALYSE + BRIEFING</div><h4>Anruf-fertig</h4><p>Kaufbereitschaft (Score, Stufe, Gründe) plus fertiges Anruf-Briefing je Lead.</p></div>
+      <div class="fcell rv"><div class="fn">01 · QUELLEN</div><h4>Ereignisse finden</h4><p>Öffentliche Jobportale, Handelsregister, Presse, Firmen-News — nur datierte, belegbare Ereignisse.</p></div>
+      <div class="fcell rv"><div class="fn">02 · MENGE</div><h4>Über-suchen</h4><p>Wir sammeln ein Vielfaches der Zielmenge — Reserve für das harte Gate.</p></div>
+      <div class="fcell rv"><div class="fn">03 · GATE</div><h4>7-Punkte-Prüfung</h4><p>Jeder Lead muss alle 7 Kriterien bestehen. Wer durchfällt, fliegt raus.</p></div>
+      <div class="fcell rv"><div class="fn">04 · BRIEFING</div><h4>Anruf-fertig</h4><p>Kaufanlass, Score, Beleg plus fertiges Anruf-Briefing und Brief je Lead.</p></div>
       <div class="fcell rv"><div class="fn">05 · LIEFERUNG</div><h4>Portal + CSV</h4><p>Übersichtliches Lieferportal und CSV-Export — sofort einsatzbereit.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ BEISPIEL-LEADS + DEMO-DOWNLOAD ============ -->
-<section id="beispiel" style="background:linear-gradient(180deg,transparent,rgba(167,139,250,.04),transparent)">
-  <div class="wrap">
-    <div class="center" style="max-width:720px">
-      <div class="eyebrow">Beispiel-Leads</div>
-      <h2>So sieht eine <span class="grad">Lieferung</span> aus.</h2>
-      <p class="sub center">Anonymisierte Muster-Leads — exakt im Format, das du bekommst. Lade dir das vollständige
-        Muster als CSV herunter und sieh dir Aufbau und Felder in Ruhe an.</p>
-    </div>
-    <div class="leadtbl rv">
-      <table>
-        <thead><tr>
-          <th>Firma (anonym.)</th><th>Branche</th><th>Region</th><th>Kaufsignal</th>
-          <th>Quelle</th><th>Frische</th><th>Kaufbereitschaft</th><th>Kontakt</th>
-        </tr></thead>
-        <tbody>
-          <tr><td class="firma-c">Maschinenbau GmbH</td><td>Maschinenbau</td><td>Raum Stuttgart</td><td>Stellt aktiv Vertrieb ein</td><td>Stepstone</td><td>vor 3 Tagen</td><td class="hi">hoch · 92/100</td><td>Mobil + pers. Mail</td></tr>
-          <tr><td class="firma-c">IT-Dienstleister GmbH</td><td>IT-Dienstleistung</td><td>Raum Köln</td><td>Sucht Terminierer / SDR</td><td>Indeed</td><td>vor 6 Tagen</td><td class="hi">hoch · 88/100</td><td>persönliche Mail</td></tr>
-          <tr><td class="firma-c">Elektrotechnik GmbH</td><td>Elektrotechnik</td><td>Raum Hamburg</td><td>Team-Ausbau + Marketing 🔥</td><td>Website + Jobportal</td><td>vor 11 Tagen</td><td class="mid">mittel · 74/100</td><td>Telefon + Formular</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="dl-row">
-      <a class="btn btn-primary" href="beispiel-leads.csv?src=beispiel_section" download>⬇️ Muster-Leads als CSV herunterladen</a>
-      <a class="btn btn-ghost js-book" data-mail-subject="Kostenloser Beispiel-Lead aus meiner Branche">Kostenlosen Beispiel-Lead aus meiner Branche</a>
-    </div>
-    <p class="smallnote">Muster zur Veranschaulichung — Firmen anonymisiert. Jeder echte Lead kommt zusätzlich mit komplettem Anruf-Briefing.
-      Im Erstgespräch bekommst du einen kostenlosen, echten Beispiel-Lead aus deiner Zielbranche, inklusive nachprüfbarem Beleg-Link.</p>
-  </div>
-</section>
-
-<!-- ============ PREMIUM GATE (7 Regeln) ============ -->
+<!-- ============ GATE ============ -->
 <section style="background:linear-gradient(180deg,transparent,rgba(52,211,153,.03),transparent)">
   <div class="wrap">
     <div class="center" style="max-width:720px">
       <div class="eyebrow">Der Qualitätsfilter</div>
       <h2>7 harte Regeln — <span class="grad">kein Lead kommt ungeprüft vorbei</span>.</h2>
-      <p class="sub center">Ein Lead wird nur ausgeliefert, wenn er <i>alle</i> Kriterien erfüllt. Lieber acht Firmen,
-        die wirklich kaufen wollen, als vierzig, die nur deine Zeit kosten.</p>
+      <p class="sub center">Ein Lead wird nur ausgeliefert, wenn er <i>alle</i> Kriterien erfüllt. Lieber acht Firmen, die wirklich kaufen wollen, als vierzig, die nur deine Zeit kosten.</p>
     </div>
     <div class="gate">
-      <div class="check"><div class="tick">1</div><div><b>Echtes Kaufsignal + Beleg</b><p>Mit nachprüfbarer Quelle-URL.</p></div></div>
-      <div class="check"><div class="tick">2</div><div><b>Frischer Beleg (≤ 90 Tage)</b><p>Kein veraltetes, längst besetztes Signal.</p></div></div>
+      <div class="check"><div class="tick">1</div><div><b>Echter Kaufanlass + Beleg</b><p>Mit nachprüfbarer Quelle-URL.</p></div></div>
+      <div class="check"><div class="tick">2</div><div><b>Frischer Beleg (≤ 90 Tage)</b><p>Kein veralteter, längst erledigter Anlass.</p></div></div>
       <div class="check"><div class="tick">3</div><div><b>Echte Firmen-Website</b><p>Kein Platzhalter, kein bloßes Profil.</p></div></div>
-      <div class="check"><div class="tick">4</div><div><b>Kein Artefakt im Namen</b><p>Firmen- &amp; Kontaktname sauber, kein Scraping-Müll.</p></div></div>
+      <div class="check"><div class="tick">4</div><div><b>Kein Artefakt im Namen</b><p>Sauberer Firmen- &amp; Kontaktname, kein Scraping-Müll.</p></div></div>
       <div class="check"><div class="tick">5</div><div><b>Belastbarer Kontakt</b><p>Telefon/Mobil oder echte persönliche Mail.</p></div></div>
       <div class="check"><div class="tick">6</div><div><b>Sendefähig</b><p>Kein Risiko-/Bounce-Kontakt, keine Sperre.</p></div></div>
       <div class="check"><div class="tick">7</div><div><b>Echter Branchen-Fit (ICP)</b><p>Passt zur Zielbranche — nicht nur ein Jobtitel.</p></div></div>
@@ -639,140 +516,107 @@
   </div>
 </section>
 
-<!-- ============ ZIELGRUPPEN ============ -->
-<section id="branchen">
-  <div class="wrap">
-    <div class="center" style="max-width:720px">
-      <div class="eyebrow">Für wen</div>
-      <h2>Branchen, in denen Kaufsignale <span class="grad">besonders gut funktionieren</span>.</h2>
-      <p class="sub center">Wir legen deine Zielbranche im Erstgespräch fest. Diese Felder liefern erfahrungsgemäß die klarsten Signale:</p>
-    </div>
-    <div class="grid3">
-      <div class="feat rv"><div class="ic">💻</div><h3>IT &amp; Software / SaaS</h3><p>Skaliert über Vertrieb — viele offene SDR-/Sales-Rollen.</p><span class="sig">Signal: SDR-Suche · Vertriebsausbau</span></div>
-      <div class="feat rv"><div class="ic">⚙️</div><h3>Maschinen- &amp; Anlagenbau</h3><p>Investiert in Außendienst und neue Märkte.</p><span class="sig">Signal: Vertriebsleitung · Standort</span></div>
-      <div class="feat rv"><div class="ic">🔌</div><h3>Elektro &amp; Industrie</h3><p>Wachstum durch Projekte und neue Teams.</p><span class="sig">Signal: Team-Ausbau</span></div>
-      <div class="feat rv"><div class="ic">📊</div><h3>Agenturen &amp; Marketing</h3><p>Bauen aktiv Neukunden-Vertrieb auf.</p><span class="sig">Signal: Leadgen-Invest · SDR</span></div>
-      <div class="feat rv"><div class="ic">🏗️</div><h3>Bau, Handwerk &amp; TGA</h3><p>Expandieren regional, brauchen Partner &amp; Zulieferer.</p><span class="sig">Signal: Standort · Wachstum</span></div>
-      <div class="feat rv"><div class="ic">🤝</div><h3>Personal &amp; Dienstleistung</h3><p>Skalieren über Vertrieb &amp; Recruiting-Kapazität.</p><span class="sig">Signal: Vertriebsaufbau</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PREISE + ROI ============ -->
+<!-- ============ PREISE ============ -->
 <section id="preise">
   <div class="wrap">
     <div class="center" style="max-width:680px">
       <div class="eyebrow">Preise</div>
-      <h2>Einfach, transparent, <span class="grad">pro Lieferung</span>.</h2>
-      <p class="sub center">Kein Abo, keine versteckten Kosten. Du zahlst für geprüfte Leads — nicht für Adressmüll.</p>
+      <h2>Kostenlos starten. Dann <span class="grad">pro Lieferung</span>.</h2>
+      <p class="sub center">Kein Abo, keine versteckten Kosten. Du zahlst für geprüfte Kaufanlass-Leads — nicht für Adressmüll.</p>
     </div>
     <div class="prices">
+
       <div class="price rv">
-        <h3>Starter</h3>
-        <div class="amt">500&nbsp;<small>€</small></div>
-        <div class="per">einmalig · ideal zum Testen</div>
-        <div class="roihint">Risikoarm starten · kostenloser Beispiel-Lead vorab</div>
+        <h3>Kostenlos</h3>
+        <div class="amt">0&nbsp;<small>€</small></div>
+        <div class="per">3 Leads — kein Risiko, keine Karte</div>
+        <div class="roihint">👉 Sieh selbst, ob die Qualität stimmt</div>
         <ul>
-          <li>25 geprüfte Signal-Leads</li>
-          <li>Kaufbereitschafts-Analyse je Lead</li>
-          <li>Anruf-Briefing + versandfertiger Brief je Lead</li>
-          <li>Beleg-Link &amp; Frische-Datum</li>
-          <li>CSV-Export</li>
+          <li>3 geprüfte Kaufanlass-Leads</li>
+          <li>Kaufanlass mit Beleg-Link</li>
+          <li>Anruf-Briefing je Lead</li>
+          <li>Keine Kreditkarte</li>
+          <li class="dim">Kein Abo, kein Haken</li>
         </ul>
-        <a class="btn btn-ghost js-book" data-mail-subject="Starter (500 €) – Signal-Leads">Termin + Beispiel-Lead</a>
+        <a class="btn btn-ghost js-book" data-mail-subject="3 kostenlose Leads – Kaufanlass-Leads">🎁 3 Leads kostenlos</a>
       </div>
 
       <div class="price pop rv">
-        <div class="ribbon">★ BELIEBTESTE WAHL</div>
-        <h3>Wachstum</h3>
-        <div class="amt">1.000&nbsp;<small>€</small></div>
-        <div class="per">einmalig · der Klassiker</div>
-        <div class="roihint">Schon 1 gewonnener Kunde amortisiert meist die Lieferung</div>
+        <div class="ribbon">★ BESTER EINSTIEG</div>
+        <h3>Pilot</h3>
+        <div class="amt">250&nbsp;<small>€</small></div>
+        <div class="per">30 Leads · einmalig</div>
+        <div class="roihint">Nur 8,33 €/Lead — bewusster Pilotpreis</div>
         <ul>
-          <li><b>50 geprüfte Signal-Leads</b></li>
-          <li>Volle Kaufbereitschafts-Analyse + Gründe</li>
-          <li><b>Anruf-Briefing + versandfertiger Brief je Lead</b></li>
+          <li><b>30 geprüfte Kaufanlass-Leads</b></li>
+          <li>Kaufanlass mit Beleg-Link &amp; Frische</li>
+          <li>Anruf-Briefing + Brief je Lead</li>
           <li>Entscheider-Kontakt (wo verfügbar)</li>
-          <li>Mehrere Signale gestapelt 🔥</li>
+          <li>CSV-Export</li>
+        </ul>
+        <a class="btn btn-primary js-book" data-mail-subject="Pilot 30 Leads 250 € – Kaufanlass-Leads">Pilot buchen</a>
+      </div>
+
+      <div class="price rv">
+        <h3>Wachstum</h3>
+        <div class="amt">500&nbsp;<small>€</small></div>
+        <div class="per">75 Leads · einmalig</div>
+        <div class="roihint">6,67 €/Lead — der beste Preis pro Lead</div>
+        <ul>
+          <li>75 geprüfte Kaufanlass-Leads</li>
+          <li>Volle Kaufanlass-Analyse + Gründe</li>
+          <li>Anruf-Briefing + Brief je Lead</li>
+          <li>Entscheider-Kontakt (wo verfügbar)</li>
           <li>Lieferportal + CSV</li>
         </ul>
-        <a class="btn btn-primary js-book" data-mail-subject="Wachstum (1.000 €) – Signal-Leads">Termin + Beispiel-Lead</a>
+        <a class="btn btn-ghost js-book" data-mail-subject="Wachstum 75 Leads 500 € – Kaufanlass-Leads">Anfragen</a>
       </div>
 
       <div class="price rv">
         <h3>Skalierung</h3>
-        <div class="amt"><small>ab</small>&nbsp;1.500&nbsp;<small>€</small></div>
-        <div class="per">100 Leads · laufende Lieferung nach Absprache</div>
-        <div class="roihint">Bester Mengenpreis · laufende Belieferung möglich</div>
+        <div class="amt"><small>ab</small>&nbsp;900&nbsp;<small>€</small></div>
+        <div class="per">150 Leads · einmalig oder monatlich</div>
+        <div class="roihint">6 €/Lead — für laufende Belieferung</div>
         <ul>
-          <li>100 geprüfte Leads</li>
-          <li>Anruf-Briefing + versandfertiger Brief je Lead</li>
+          <li>150 geprüfte Leads</li>
+          <li>Anruf-Briefing + Brief je Lead</li>
           <li>Mehrere Branchen &amp; Regionen (DACH)</li>
-          <li class="dim">Priorisierte Lieferung &amp; Reporting</li>
+          <li class="dim">Priorisierte Lieferung</li>
           <li class="dim">Laufende Belieferung möglich</li>
         </ul>
-        <a class="btn btn-ghost js-book" data-mail-subject="Skalierung (100 Leads, ab 1.500 €) – Signal-Leads">Gespräch anfragen</a>
+        <a class="btn btn-ghost js-book" data-mail-subject="Skalierung 150 Leads 900 € – Kaufanlass-Leads">Gespräch anfragen</a>
       </div>
+
     </div>
     <p class="price-note">Alle Preise netto zzgl. ggf. USt. · B2B · 100 % geprüfte Leads — kein Adressmüll, keine Karteileichen.</p>
-
-    <!-- ROI Beispielrechnung (interaktiv, ehrlich als Beispiel gekennzeichnet) -->
-    <div class="roi rv" style="margin-top:46px">
-      <div>
-        <div class="eyebrow" style="margin-bottom:8px">Rechne selbst</div>
-        <h3 style="font-size:22px;font-weight:800;margin-bottom:6px;letter-spacing:-.02em">Wann hat sich die Lieferung bezahlt gemacht?</h3>
-        <p style="color:var(--muted);font-size:14.5px">Beispielrechnung — trag deine eigenen Werte ein. (Paket „Wachstum", 1.000 € / 50 Leads.)</p>
-        <label>Dein durchschnittlicher Auftragswert: <span class="val" id="roiDealOut">2.000 €</span></label>
-        <input type="range" id="roiDeal" min="500" max="20000" step="500" value="2000">
-        <label>Gewonnene Kunden aus 50 Leads: <span class="val" id="roiWonOut">1</span></label>
-        <input type="range" id="roiWon" min="0" max="10" step="1" value="1">
-      </div>
-      <div class="roi-out">
-        <div class="big grad" id="roiX">2,0×</div>
-        <div class="lbl">Rückfluss auf die Lieferung (1.000 €)</div>
-        <div class="sec">Erlös aus gewonnenen Kunden: <b id="roiRev" style="color:var(--text)">2.000 €</b><br>
-          Schon <b style="color:var(--emerald)">1 Kunde</b> bei ø 2.000 € deckt die Lieferung doppelt.</div>
-      </div>
-    </div>
-    <p class="smallnote">Illustrative Beispielrechnung, keine garantierte Abschlussquote. Deine echten Zahlen hängen von Angebot, Branche und Vertrieb ab.</p>
   </div>
 </section>
 
-<!-- ============ GARANTIE / RISIKO-REDUKTION ============ -->
+<!-- ============ GARANTIE / RISIKO-UMKEHR ============ -->
 <section style="background:linear-gradient(180deg,transparent,rgba(52,211,153,.04),transparent)">
   <div class="wrap">
     <div class="center" style="max-width:680px">
-      <div class="eyebrow">Dein Risiko: minimal</div>
+      <div class="eyebrow">Dein Risiko: null</div>
       <h2>Du gehst <span class="grad">in Vorleistung? Nein — wir.</span></h2>
-      <p class="sub center">Damit du ohne Bauchschmerzen startest, drehen wir das Risiko um.</p>
+      <p class="sub center">Drehen das Risiko um. Du testest kostenlos, zahlst nur bei Überzeugung.</p>
     </div>
     <div class="guars">
-      <div class="guar rv"><div class="ic">🎁</div><h3>Kostenloser Beispiel-Lead vorab</h3>
-        <p>Vor dem Kauf bekommst du einen echten Beispiel-Lead aus deiner Zielbranche — inklusive Beleg-Link. Überzeugt er dich nicht, kostet dich das nichts.</p></div>
+      <div class="guar rv"><div class="ic">🎁</div><h3>3 Leads kostenlos vorab</h3>
+        <p>Bevor du einen Cent bezahlst, bekommst du 3 echte Kaufanlass-Leads. Überzeugen sie nicht, kostet es dich nichts — keine Karte, kein Abo.</p></div>
       <div class="guar rv"><div class="ic">🔁</div><h3>Nachlieferung bei Gate-Fail</h3>
-        <p>Sollte ein gelieferter Lead das 7-Punkte-Gate nachweislich verfehlen oder unzustellbar sein, ersetzen wir ihn kostenlos. Du zahlst nur für geprüfte Leads.</p></div>
-      <div class="guar rv"><div class="ic">🔒</div><h3>DSGVO-konform &amp; kein Abo</h3>
-        <p>Öffentlich verfügbare B2B-Informationen, keine Massenmails in deinem Namen. Bezahlung pro Lieferung — keine Abo-Falle, keine versteckten Kosten.</p></div>
+        <p>Sollte ein Lead das 7-Punkte-Gate nachweislich verfehlen, ersetzen wir ihn kostenlos. Du zahlst nur für geprüfte Qualität.</p></div>
+      <div class="guar rv"><div class="ic">🔒</div><h3>Kein Abo, keine Falle</h3>
+        <p>Bezahlung pro Lieferung. Keine automatische Verlängerung, keine versteckten Kosten. Laufende Belieferung nur, wenn du sie aktiv vereinbarst.</p></div>
     </div>
 
-    <!-- Gründer-Versprechen (echt, ehrlich — ersetzt erfundene Testimonials) -->
     <div class="founder rv" style="margin-top:30px">
       <div class="ava">EA</div>
       <div>
-        <blockquote>„Rebell System ist jung — und genau deshalb gehe ich in Vorleistung. Du bekommst zuerst einen
-          kostenlosen, echten Beispiel-Lead. Jeder gelieferte Lead, der mein Gate verfehlt, wird ersetzt.
-          Ich verkaufe dir keine Liste, sondern Firmen mit echtem Kaufanlass — nachprüfbar an jedem Beleg-Link."</blockquote>
+        <blockquote>„Ich verkaufe dir keine Liste, sondern Firmen mit echtem Kaufanlass — nachprüfbar an jedem Beleg-Link. 3 Leads bekommst du kostenlos, weil ich will, dass du siehst, was dich erwartet, bevor du zahlst."</blockquote>
         <div class="who"><b>Emilio Allegro</b> · Gründer, Rebell System · <a href="mailto:emilio@rebellsystem.com" style="color:var(--cyan)">emilio@rebellsystem.com</a></div>
       </div>
     </div>
 
-    <!-- ===========================================================================
-         ECHTE, ANONYMISIERTE KUNDENSTIMMEN (Wortlaut geglättet, ohne Fotos — Stand 2026-06-24).
-         WICHTIG: nur echte, belegbare Zitate verwenden — keine erfundenen (UWG §5 abmahnbar).
-         Wenn du echte Fotos MIT schriftlicher Freigabe der Person hast, kannst du je Karte
-         vor das <blockquote> ein <img class="qava" ...> einsetzen. Niemals Stock-/Fremdfotos
-         als "Kunden" ausgeben.
-    ============================================================================ -->
     <div style="margin-top:46px">
       <div class="center" style="max-width:680px">
         <div class="eyebrow">Das sagen Kunden</div>
@@ -788,12 +632,6 @@
         <div class="qcard rv"><div class="mark">&ldquo;</div>
           <blockquote>Endlich Leads, die wissen, worum es geht. Unsere Erstgespräche sind substanzieller – und führen spürbar öfter weiter.</blockquote>
           <div class="who"><b>Inhaber</b>Marketingagentur aus Süddeutschland</div></div>
-        <div class="qcard rv"><div class="mark">&ldquo;</div>
-          <blockquote>Die Qualität der Leads hat sich spürbar verbessert. Wir führen weniger Gespräche – aber die richtigen. Unsere Pipeline ist stabiler und planbarer geworden.</blockquote>
-          <div class="who"><b>Vertriebsleiter</b>Mittelstand</div></div>
-        <div class="qcard rv"><div class="mark">&ldquo;</div>
-          <blockquote>Es liefert konstant. Besonders schätzen wir die klaren Gesprächsanlässe und die passgenauen Kontakte.</blockquote>
-          <div class="who"><b>Founder</b>B2B-Beratung</div></div>
       </div>
     </div>
   </div>
@@ -807,16 +645,13 @@
       <h2>Was du vielleicht noch <span class="grad">fragst</span>.</h2>
     </div>
     <div class="faq">
-      <details><summary>Woher kommen die Leads?</summary><p>Aus öffentlich zugänglichen Kaufsignalen — z. B. aktiven Stellenanzeigen, Expansions- und Wachstumshinweisen. Jeder Lead trägt einen nachprüfbaren Beleg-Link zur Originalquelle.</p></details>
-      <details><summary>Wie „frisch" sind die Signale?</summary><p>Wir liefern Signale mit Beleg, der in der Regel ≤ 90 Tage alt ist. Das Alter steht an jedem Lead — du siehst sofort, wie aktuell der Kaufmoment ist.</p></details>
-      <details><summary>Was unterscheidet euch von gekauften Adresslisten?</summary><p>Adresslisten sind kalt und beliebig. Wir liefern Firmen mit konkretem, belegtem Kaufmoment und Analyse. Jeder Lead passiert ein hartes 7-Punkte-Gate — lieber 8 echte als 39 wackelige.</p></details>
-      <details><summary>Bekomme ich echte Ansprechpartner und Kontaktdaten?</summary><p>Ja, wo verfügbar: echte Firmen-Website, Telefon/Mobil und — wenn vorhanden — eine persönliche E-Mail. Reine Sammel-Adressen (info@) weisen wir ehrlich als solche aus und verkaufen sie nicht als „persönlich".</p></details>
-      <details><summary>Was ist das „Anruf-Briefing"?</summary><p>Zu jedem Signal-Lead bekommst du ein kompaktes Briefing: ein Firmen-Kurzprofil (was die Firma macht, Branche, Größenordnung), einen Gesprächsöffner, der genau auf das belegte Kaufsignal zugeschnitten ist, und die wahrscheinlichsten Einwände mit passender Antwort — zusätzlich als druckfertiges PDF je Lead. So gehst du vorbereitet ins Gespräch, statt vor jedem Anruf selbst zu recherchieren.</p></details>
-      <details><summary>Bekomme ich auch fertige Briefe für die Leads?</summary><p>Ja. Zu jedem Lead erstellen wir ein versandfertiges, auf das Kaufsignal personalisiertes Anschreiben als PDF — mit Anschrift, Betreff und Text. Du druckst und sendest es einfach, oder wir übernehmen Druck und postalischen Versand auf Wunsch. Adressierte Briefwerbung an Unternehmen ist im B2B grundsätzlich auch ohne vorherige Einwilligung zulässig — anders als Kalt-Mail oder -Anruf. Physische Post hat im B2B kaum Wettbewerb im Briefkasten und keinen Spam-Filter.</p></details>
-      <details><summary>Was, wenn ein Lead nicht passt?</summary><p>Sollte ein gelieferter Lead das 7-Punkte-Gate nachweislich verfehlen oder unzustellbar sein, ersetzen wir ihn kostenlos (Nachlieferung). Und du startest ohnehin mit einem kostenlosen Beispiel-Lead vorab — du prüfst die Qualität vor dem Kauf.</p></details>
-      <details><summary>Ist das DSGVO-konform?</summary><p>Wir arbeiten mit öffentlich verfügbaren Unternehmensinformationen im B2B-Kontext und versenden keine Massenmails in deinem Namen. Den rechtssicheren Erstkontakt führst du selbst.</p></details>
-      <details><summary>Gibt es ein Abo oder versteckte Kosten?</summary><p>Nein. Du zahlst transparent pro Lieferung (ab 500 €). Kein Abo, keine automatische Verlängerung, keine versteckten Gebühren. Laufende Belieferung gibt es nur, wenn du sie aktiv vereinbarst.</p></details>
-      <details><summary>Wie schnell bekomme ich die Leads?</summary><p>Nach dem Erstgespräch und der Festlegung von Branche + Signal in der Regel innerhalb weniger Werktage — als Lieferportal-Link und CSV.</p></details>
+      <details><summary>Was ist der Unterschied zwischen einem Signal und einem Kaufanlass?</summary><p>Ein Signal sagt: „könnte etwas sein". Ein Kaufanlass sagt: „hier ist der Grund, warum diese Firma JETZT kauft". Wir liefern keinen vagen Hinweis, sondern einen geprüften, belegten Anlass — mit Quellen-Link, Datum und Begründung. Intent-Daten-Anbieter verkaufen dir eine Vermutung. Wir verkaufen dir einen Beweis.</p></details>
+      <details><summary>Kann ich kostenlos testen?</summary><p>Ja. Du bekommst 3 Leads kostenlos — ohne Kreditkarte, ohne Risiko. Sieh selbst, ob die Qualität stimmt. Erst dann kaufst du. So like intently, nur besser: unsere 3 Leads sind hand-geprüft und haben einen echten Beleg-Link.</p></details>
+      <details><summary>Woher kommen die Kaufanlässe?</summary><p>Aus öffentlich zugänglichen Quellen: Stellenanzeigen (Stepstone, Indeed, BA), Expansionsmeldungen, Handelsregistereinträge, Standorteröffnungen, Pressemeldungen. Jeder Kaufanlass trägt einen nachprüfbaren Beleg-Link.</p></details>
+      <details><summary>Was unterscheidet euch von gekauften Adresslisten?</summary><p>Adresslisten sind kalt und beliebig. Wir liefern Firmen mit konkretem, belegtem Kaufanlass und Analyse. Jeder Lead passiert ein hartes 7-Punkte-Gate — lieber 8 echte als 39 wackelige.</p></details>
+      <details><summary>Bekomme ich echte Ansprechpartner und Kontaktdaten?</summary><p>Ja, wo verfügbar: echte Firmen-Website, Telefon/Mobil und — wenn vorhanden — eine persönliche E-Mail. Reine Sammel-Adressen (info@) weisen wir ehrlich als solche aus.</p></details>
+      <details><summary>Wie schnell bekomme ich die Leads?</summary><p>Nach dem Erstgespräch und der Festlegung von Branche + Anlass in der Regel innerhalb weniger Werktage — als Lieferportal-Link und CSV.</p></details>
+      <details><summary>Gibt es ein Abo?</summary><p>Nein. Du zahlst transparent pro Lieferung. Kein Abo, keine automatische Verlängerung. Laufende Belieferung nur, wenn du sie aktiv vereinbarst.</p></details>
     </div>
   </div>
 </section>
@@ -825,28 +660,27 @@
 <section>
   <div class="wrap">
     <div class="cta-box rv">
-      <div class="urgency"><span class="dot"></span> Begrenzte Kapazität — pro Woche nur eine feste Zahl Lieferungen</div>
-      <h2>Bereit für Leads, die <span class="grad">kaufen wollen</span>?</h2>
-      <p class="sub">Buch dir ein kostenloses Erstgespräch. Wir klären deine Zielbranche, die passenden Signale —
-        und du bekommst einen kostenlosen Beispiel-Lead. Geprüfte Leads ab 500 €.</p>
+      <div class="urgency"><span class="dot"></span> 3 Leads kostenlos — kein Risiko, keine Karte</div>
+      <h2>Bereit für Leads mit <span class="grad">echtem Kaufanlass</span>?</h2>
+      <p class="sub">Kein vages Signal. Sondern geprüfte, belegte Gründe, warum genau diese Firmen JETZT kaufen. Starte mit 3 kostenlosen Leads und überzeuge dich selbst.</p>
       <div class="cta-row">
-        <a class="btn btn-primary js-book" data-mail-subject="Termin + Beispiel-Lead – Signal-Leads">📅 Termin sichern &amp; Beispiel-Lead erhalten</a>
-        <a class="btn btn-ghost" href="beispiel-leads.csv?src=final_cta" download>⬇️ Muster-CSV ansehen</a>
+        <a class="btn btn-primary js-book" data-mail-subject="3 kostenlose Leads – Kaufanlass-Leads">🎁 3 Leads kostenlos erhalten</a>
+        <a class="btn btn-ghost" href="#preise">Pilot: 30 Leads für 250 €</a>
       </div>
-      <p style="color:var(--muted2);font-size:13px;margin-top:18px">Kein Abo · Nachlieferung bei Gate-Fail · 100 % DSGVO-konform</p>
+      <p style="color:var(--muted2);font-size:13px;margin-top:18px">3 Leads kostenlos · Kein Abo · Nachlieferung bei Gate-Fail · 100 % DSGVO-konform</p>
     </div>
   </div>
 </section>
 
-<!-- Sticky Mobile CTA (nur <920px sichtbar) -->
+<!-- Mobile CTA -->
 <div class="mobile-cta">
-  <a class="btn btn-primary js-book" data-mail-subject="Termin + Beispiel-Lead – Signal-Leads">📅 Termin sichern</a>
-  <a class="btn btn-ghost" href="beispiel-leads.csv?src=mobile_bar" download>⬇️ CSV</a>
+  <a class="btn btn-primary js-book" data-mail-subject="3 kostenlose Leads – Kaufanlass-Leads">🎁 3 Leads kostenlos</a>
+  <a class="btn btn-ghost" href="#preise">Pilot 250 €</a>
 </div>
 
 <footer>
   <div class="wrap foot">
-    <div class="logo">Rebell<b>system</b> <span class="x">/ Signal-Leads</span></div>
+    <div class="logo">Rebell<b>system</b> <span class="x">/ Kaufanlass-Leads</span></div>
     <div class="foot-links">
       <a href="mailto:emilio@rebellsystem.com">emilio@rebellsystem.com</a>
       <a href="impressum.html">Impressum</a>
@@ -858,42 +692,13 @@
 </footer>
 
 <script>
-  // ====== Calendly-Link (bei Bedarf hier aendern) ======
   const CALENDLY = "https://calendly.com/rebellsystem/rebellsystem";
-  // Leer ("") setzen -> alle Buttons fallen auf mailto:emilio@rebellsystem.com zurueck.
-  // =====================================================
   document.querySelectorAll('.js-book').forEach(function(el){
-    var subj = encodeURIComponent(el.getAttribute('data-mail-subject') || 'Anfrage Signal-Leads');
+    var subj = encodeURIComponent(el.getAttribute('data-mail-subject') || 'Anfrage Kaufanlass-Leads');
     if (CALENDLY) { el.setAttribute('href', CALENDLY); el.setAttribute('target','_blank'); el.setAttribute('rel','noopener'); }
     else { el.setAttribute('href', 'mailto:emilio@rebellsystem.com?subject=' + subj); }
   });
   document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // ====== ROI-Beispielrechnung (rein illustrativ, keine garantierte Quote) ======
-  (function(){
-    var deal = document.getElementById('roiDeal'),
-        won  = document.getElementById('roiWon'),
-        dealOut = document.getElementById('roiDealOut'),
-        wonOut  = document.getElementById('roiWonOut'),
-        xOut = document.getElementById('roiX'),
-        revOut = document.getElementById('roiRev');
-    if(!deal) return;
-    var PRICE = 1000;
-    var fmt = function(n){ return n.toLocaleString('de-DE') + ' €'; };
-    function calc(){
-      var d = +deal.value, w = +won.value;
-      var rev = d * w;
-      dealOut.textContent = fmt(d);
-      wonOut.textContent = w;
-      revOut.textContent = fmt(rev);
-      xOut.textContent = (rev / PRICE).toLocaleString('de-DE',{minimumFractionDigits:1,maximumFractionDigits:1}) + '×';
-    }
-    deal.addEventListener('input', calc);
-    won.addEventListener('input', calc);
-    calc();
-  })();
-
-  // ====== scroll reveal ======
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
   }, {threshold:.12});
