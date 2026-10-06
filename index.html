@@ -140,6 +140,17 @@
   .cmp td.us{color:var(--text);background:rgba(52,211,153,.04)}
   .cmp td.us::before{content:"✓ ";color:var(--emerald);font-weight:800}
   .cmp td.old::before{content:"✕ ";color:var(--red);font-weight:800;opacity:.7}
+  /* Handy: Tabelle als gestapelte Karten, damit rechts nichts abgeschnitten wird */
+  @media (max-width:640px){
+    .cmp table,.cmp tbody,.cmp tr,.cmp td{display:block;width:auto}
+    .cmp thead{display:none}
+    .cmp tbody tr{border-bottom:1px solid var(--border);padding:6px 0}
+    .cmp tbody tr:last-child{border-bottom:0}
+    .cmp td{border-bottom:0;padding:7px 16px}
+    .cmp td.k{width:auto;padding-top:12px;color:var(--text);font-size:15px}
+    .cmp td.old::before{content:"✕ Intent-Signal: "}
+    .cmp td.us::before{content:"✓ Signal-Opportunity: "}
+  }
 
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
   .step{position:relative;padding-top:8px}
