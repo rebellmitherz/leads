@@ -216,6 +216,12 @@
   .price li.dim{color:var(--muted2)} .price li.dim::before{content:"+";color:var(--cyan)}
   .price .btn{width:100%;justify-content:center;font-size:14px;padding:11px 16px}
   .price-note{text-align:center;color:var(--muted2);font-size:14px;margin-top:24px}
+  .hoeren{max-width:760px;margin:40px auto 0;background:linear-gradient(180deg,var(--surface2),var(--surface));
+          border:1px solid var(--border);border-radius:16px;padding:24px}
+  .hoeren h3{font-size:20px;line-height:1.25;margin:0 0 10px}
+  .hoeren p{color:var(--muted);font-size:16px;margin:0 0 16px}
+  .hoeren audio{display:block;width:100%;color-scheme:dark}
+  .hoeren .dauer{color:var(--muted2);font-size:13px;margin:10px 0 0}
 
   .guars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .guar{background:linear-gradient(180deg,rgba(52,211,153,.05),rgba(255,255,255,.01));
@@ -595,6 +601,16 @@
     <p class="price-note">Direkt online buchen: Bei der Zahlung gibst du Wunschbranche, Region und Liefer-E-Mail an. Lieferung innerhalb von 5 Werktagen nach Zahlungseingang.</p>
     <p class="price-note">Alle Preise netto zzgl. ggf. USt. · B2B · 100 % geprüfte Opportunities — kein Adressmüll, keine Karteileichen.</p>
     <p class="smallnote" style="text-align:center;margin-top:8px;color:var(--amber)">📅 Laufende Belieferung: 12 Monate × 100 Opportunities/Monat — nach Absprache.</p>
+
+    <div class="hoeren" id="so-funktionierts">
+      <div class="eyebrow">Podcast · 4 Minuten</div>
+      <h3>So funktioniert's — in 4 Minuten anhören</h3>
+      <p>Eine Adressliste sagt dir nur, dass es eine Firma gibt. Ein Kaufsignal sagt dir, warum sie gerade jetzt einen Anlass hat, mit dir zu sprechen — mit Quelle und Datum, jedes einzeln geprüft. In der Folge hörst du, wie das abläuft und was in den drei Paketen steckt: einmalig, kein Abo.</p>
+      <audio controls preload="none" src="assets/audio/rebellsystem-podcast-ki-signale.mp3">
+        <a href="assets/audio/rebellsystem-podcast-ki-signale.mp3">Folge als MP3 anhören</a>
+      </audio>
+      <p class="dauer">Folge „Rebellsystem: Leads mit KI-Signalen statt Adresslisten“ · 3:58 Min. · startet erst, wenn du auf Abspielen klickst.</p>
+    </div>
   </div>
 </section>
 
