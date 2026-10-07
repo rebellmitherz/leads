@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leads.rebellsystem.com/sitemap.xml
