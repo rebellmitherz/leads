@@ -231,6 +231,12 @@
   .founder .ava{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-size:32px;font-weight:800;color:#04110d;
         background:linear-gradient(120deg,var(--cyan),var(--emerald),var(--violet));flex:0 0 auto}
   .founder .ava.foto{width:240px;height:auto;aspect-ratio:4/5;border-radius:14px;object-fit:cover;background:none;display:block;border:1px solid var(--border2)}
+  .clips{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:760px;margin:34px auto 0}
+  .clip{border:1px solid var(--border2);border-radius:var(--r);padding:18px;background:var(--surface);text-align:center}
+  .clip video{width:100%;aspect-ratio:9/16;border-radius:14px;background:#05080c;display:block}
+  .clip h3{margin:16px 0 6px;font-size:19px}
+  .clip p{color:var(--muted);font-size:14.5px;margin-bottom:14px}
+  @media(max-width:640px){.clips{grid-template-columns:1fr;max-width:340px}}
   .founder blockquote{font-size:17px;line-height:1.6;color:var(--text)}
   .founder .who{margin-top:12px;color:var(--muted);font-size:14px}
   .founder .who b{color:var(--text)}
@@ -350,6 +356,7 @@
       <a href="#unterschied">Signal vs. Opportunity</a>
       <a href="#anlaesse">Vertriebsanlässe</a>
       <a href="#briefing">Gesprächseinstieg</a>
+      <a href="radar/" style="color:var(--cyan)">Radar (gratis)</a>
       <a href="#preise">Preise</a>
       <a href="#faq">FAQ</a>
       <a class="btn btn-primary" href="https://buy.stripe.com/aFa6oJ3Wc8DL1f66aR8og0p">Pilot buchen</a>
@@ -373,6 +380,7 @@
       <div class="hero-cta">
         <a class="btn btn-primary" href="https://buy.stripe.com/aFa6oJ3Wc8DL1f66aR8og0p">Pilot buchen</a>
                 <a class="btn btn-ghost" href="#preise">Pilot: 30 Opportunities für 250 €</a>
+        <a class="btn btn-ghost" href="radar/" style="color:var(--cyan)">Erst gratis testen: der Radar →</a>
       </div>
       <div class="hero-note"><span class="dot"></span> Pilot: 30 Opportunities für 250 € · Kein Abo · Beleg-Link an jeder Opportunity</div>
     </div>
@@ -414,6 +422,31 @@
       <div class="stat rv"><div class="n grad">100 %</div><div class="l">Jede Opportunity mit geprüftem Vertriebsanlass + Beleg-Link</div></div>
       <div class="stat rv"><div class="n grad">≤ 90 Tage</div><div class="l">Frische des Anlasses — kein Karteileichen-Recycling</div></div>
       <div class="stat rv"><div class="n grad">7 Regeln</div><div class="l">Hartes Gate vor jeder Lieferung</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KURZ GEZEIGT: LEADS UND RADAR ============ -->
+<section id="radar" style="padding-top:20px">
+  <div class="wrap">
+    <div class="center" style="max-width:720px">
+      <div class="eyebrow">In 18 Sekunden</div>
+      <h2>Zwei Wege: <span class="grad">gratis testen oder gleich anrufen</span>.</h2>
+      <p class="sub center">Der Radar zeigt dir jede Woche kostenlos Firmen mit belegtem Anlass. Das Lead-Paket liefert dazu Ansprechpartner und Telefon.</p>
+    </div>
+    <div class="clips">
+      <div class="clip rv">
+        <video controls muted loop playsinline preload="none" poster="clip-radar.jpg"><source src="clip-radar.mp4" type="video/mp4"></video>
+        <h3>Der Radar</h3>
+        <p>Firma, Ort, Anlass, Quelle und Datum. Jede Woche per Mail, 0 €.</p>
+        <a class="btn btn-ghost" href="radar/" style="color:var(--cyan)">Radar gratis abonnieren →</a>
+      </div>
+      <div class="clip rv">
+        <video controls muted loop playsinline preload="none" poster="clip-leads.jpg"><source src="clip-leads.mp4" type="video/mp4"></video>
+        <h3>Das Lead-Paket</h3>
+        <p>30 Firmen mit Anlass, Ansprechpartner, Telefon und Beleg-Link.</p>
+        <a class="btn btn-primary" href="https://buy.stripe.com/aFa6oJ3Wc8DL1f66aR8og0p">Pilot buchen · 250 €</a>
+      </div>
     </div>
   </div>
 </section>
