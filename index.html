@@ -230,6 +230,7 @@
         background:radial-gradient(80% 130% at 100% 0%,rgba(167,139,250,.1),transparent 60%),var(--surface)}
   .founder .ava{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-size:32px;font-weight:800;color:#04110d;
         background:linear-gradient(120deg,var(--cyan),var(--emerald),var(--violet));flex:0 0 auto}
+  .founder .ava.foto{width:240px;height:auto;aspect-ratio:4/5;border-radius:14px;object-fit:cover;background:none;display:block;border:1px solid var(--border2)}
   .founder blockquote{font-size:17px;line-height:1.6;color:var(--text)}
   .founder .who{margin-top:12px;color:var(--muted);font-size:14px}
   .founder .who b{color:var(--text)}
@@ -327,6 +328,7 @@
     .roi-out{border-left:0;border-top:1px solid var(--border);padding-top:24px}
     .founder{grid-template-columns:1fr;text-align:center}
     .founder .ava{margin:0 auto}
+    .founder .ava.foto{width:min(300px,100%)}
     .nav-links{display:none}
     .burger{display:block}
     .nav-links.open{display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;
@@ -616,7 +618,7 @@
     </div>
 
     <div class="founder rv" style="margin-top:30px">
-      <img class="ava" src="emilio-allegro.jpg" alt="Emilio Allegro" width="84" height="84" loading="lazy" style="object-fit:cover">
+      <img class="ava foto" src="emilio-allegro.jpg" alt="Emilio Allegro" width="720" height="900" loading="lazy">
       <div>
         <blockquote>„Ich verkaufe dir keine Liste, sondern Unternehmen mit echtem Vertriebsanlass — nachprüfbar an jedem Beleg-Link. Starte mit dem Pilotpaket und sieh selbst, was dich erwartet."</blockquote>
         <div class="who"><b>Emilio Allegro</b> · Gründer, Rebell System · <a href="mailto:emilio@rebellsystem.com" style="color:var(--cyan)">emilio@rebellsystem.com</a></div>
