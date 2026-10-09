@@ -124,8 +124,8 @@
 <section>
   <div class="wrap">
     <div class="eyebrow">Radar · gratis · nur für Unternehmen</div>
-    <h1>Jede Woche Firmen mit <span class="grad">belegtem Anlass</span> — in deinem Thema.</h1>
-    <p class="lead">Du trägst deine E-Mail-Adresse ein und wählst dein Thema. Einmal pro Woche bekommst du eine Liste: Firma, Ort, Anlass, Quelle und Datum. Ansprechpartner und Telefonnummer gehören nicht zum Radar — die bekommst du mit einem Lead-Paket.</p>
+    <h1>Jede Woche <span class="grad">belegte Anlässe</span> in deinem Thema.</h1>
+    <p class="lead">Du wählst dein Thema und bei Ausschreibungen oder Immobilien auch deine Region. Einmal pro Woche bekommst du eine Liste mit Ort, Anlass, Quelle und Datum. Bei Immobilien zeigen wir nur amtliche Objektdaten ohne Eigentümernamen.</p>
     <div class="btns">
       <a class="btn btn-primary" href="#anmelden">Gratis anmelden</a>
       <a class="btn btn-ghost" href="#themen">Probeausgabe ansehen</a>
@@ -136,8 +136,8 @@
 <section style="padding-top:0">
   <div class="wrap">
     <div class="drei">
-      <div class="kasten"><h3>Firma und Ort</h3><p>Wer es ist und wo. Öffentlich belegt, nichts geschätzt.</p></div>
-      <div class="kasten"><h3>Der Anlass</h3><p>Was sich dort gerade ändert, mit wörtlichem Zitat aus der Quelle.</p></div>
+      <div class="kasten"><h3>Eintrag und Ort</h3><p>Firma, Ausschreibung oder Objektart und Ort. Öffentlich belegt, nichts geschätzt.</p></div>
+      <div class="kasten"><h3>Der Anlass</h3><p>Was sich dort gerade ändert, mit dem Beleg aus der Quelle.</p></div>
       <div class="kasten"><h3>Quelle und Datum</h3><p>Der Link zum Nachlesen. Kein Anlass ist älter als 90 Tage.</p></div>
     </div>
   </div>
@@ -170,22 +170,22 @@
         <p class="zahl">3 Anlässe in der Probe · jüngster vom 3. September 2026</p>
         <span class="mehr">Probeausgabe ansehen →</span>
       </a>
-      <a class="thema" href="probe-sicherheit.html">
-        <h3>Sicherheit und Objektschutz</h3>
-        <p>Neue Standorte, Neubauten und Ausschreibungen mit Bedarf an Bewachung und Sicherheitstechnik.</p>
-        <p class="fuer">Für Sicherheitsdienste, Errichter und Anbieter von Sicherheitstechnik.</p>
-        <p class="zahl">8 Anlässe in der Probe · jüngster vom 16. September 2026</p>
-        <span class="mehr">Probeausgabe ansehen →</span>
-      </a>
-      <a class="thema" href="probe-ausschreibungen.html">
-        <h3>Ausschreibungen für Sicherheitsdienste</h3>
-        <p>Laufende öffentliche Ausschreibungen für Bewachung und Sicherheitsdienste.</p>
-        <p class="fuer">Für Sicherheitsdienste in ganz Deutschland.</p>
-        <p class="zahl">8 Anlässe in der Probe · jüngster vom 8. Oktober 2026</p>
-        <span class="mehr">Probeausgabe ansehen →</span>
-      </a>
+      <div class="thema">
+        <h3>Ausschreibungen für Sicherheitsdienste · regional</h3>
+        <p>Laufende öffentliche Ausschreibungen am Leistungsort. Wähle deine Großregion.</p>
+        <p class="fuer">Nord · Ost · West · Süd</p>
+        <p class="zahl">Probeausgaben vom 9. Oktober 2026</p>
+        <p><a class="mehr" href="probe-ausschreibungen-nord.html">Nord</a> · <a class="mehr" href="probe-ausschreibungen-ost.html">Ost</a> · <a class="mehr" href="probe-ausschreibungen-west.html">West</a> · <a class="mehr" href="probe-ausschreibungen-sued.html">Süd</a></p>
+      </div>
+      <div class="thema">
+        <h3>Immobilien · regional</h3>
+        <p>Amtliche Zwangsversteigerungstermine mit Ort, Verkehrswert und Gericht.</p>
+        <p class="fuer">Nord · Ost · West · Süd</p>
+        <p class="zahl">Probeausgaben vom 9. Oktober 2026</p>
+        <p><a class="mehr" href="probe-immobilien-nord.html">Nord</a> · <a class="mehr" href="probe-immobilien-ost.html">Ost</a> · <a class="mehr" href="probe-immobilien-west.html">West</a> · <a class="mehr" href="probe-immobilien-sued.html">Süd</a></p>
+      </div>
     </div>
-    <p class="hinweis">Stand der Probeausgaben: 8. Oktober 2026. Weitere Themen kommen dazu, sobald es dafür geprüfte Anlässe aus den letzten 90 Tagen gibt.</p>
+    <p class="hinweis">Stand der Probeausgaben: 9. Oktober 2026. Weitere Themen kommen dazu, sobald es dafür geprüfte Anlässe aus den letzten 90 Tagen gibt.</p>
   </div>
 </section>
 
@@ -200,9 +200,6 @@
 <!-- START - We recommend to place the below code where you want the form in your website html  -->
 <div class="sib-form" style="text-align: center;
          background-color: #EFF2F7; 
-        
-        
-        
         ">
   <div id="sib-form-container" class="sib-form-container">
     <div id="error-message" class="sib-form-message-panel" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;
@@ -268,6 +265,9 @@
                 <div class="entry__field">
                   <select class="input" id="THEMA" name="THEMA" data-required="true">
                     <option value="" disabled selected hidden>Wähle einen Wert aus</option>
+                    <option class="sib-menu__item" value="4">
+                      Immobilien
+                    </option>
                     <option class="sib-menu__item" value="5">
                       Handwerk
                     </option>
@@ -277,11 +277,36 @@
                     <option class="sib-menu__item" value="10">
                       Versicherungs-Anlässe
                     </option>
-                    <option class="sib-menu__item" value="11">
-                      Sicherheit und Objektschutz
-                    </option>
                     <option class="sib-menu__item" value="12">
                       Ausschreibungen für Sicherheitsdienste
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 8px 0;">
+          <div class="sib-select sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="REGION">Großregion (nur bei Ausschreibungen und Immobilien)</label>
+                <div class="entry__field">
+                  <select class="input" id="REGION" name="REGION">
+                    <option value="" disabled selected hidden>Wähle einen Wert aus</option>
+                    <option class="sib-menu__item" value="1">
+                      Nord: Bremen, Hamburg, Mecklenburg-Vorpommern, Niedersachsen, Schleswig-Holstein
+                    </option>
+                    <option class="sib-menu__item" value="2">
+                      Ost: Berlin, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen
+                    </option>
+                    <option class="sib-menu__item" value="3">
+                      West: Hessen, Nordrhein-Westfalen, Rheinland-Pfalz, Saarland
+                    </option>
+                    <option class="sib-menu__item" value="4">
+                      Süd: Baden-Württemberg, Bayern
                     </option>
                   </select>
                 </div>
@@ -299,7 +324,9 @@
                 <div class="entry__choice" style="">
                   <label>
                     <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
-                    <span class="checkbox checkbox_tick_positive" style="margin-left:"></span><span style="font-family:Helvetica, sans-serif; font-size:14px; text-align:left; color:#3C4858; background-color:transparent;"><p>Ich möchte deinen Newsletter erhalten und akzeptiere die Datenschutzerklärung.</p></span>
+                    <span class="checkbox checkbox_tick_positive"
+            style="margin-left:"
+            ></span><span style="font-family:Helvetica, sans-serif; font-size:14px; text-align:left; color:#3C4858; background-color:transparent;"><p>Ich möchte deinen Newsletter erhalten und akzeptiere die Datenschutzerklärung.</p></span>
                   </label>
                 </div>
               </div>
@@ -350,7 +377,7 @@
   <div class="wrap">
     <div class="eyebrow">Radar Plus · Abo · nur für Unternehmen</div>
     <h2>Dasselbe Radar, mit <span class="grad">Ansprechpartner und Telefon</span>.</h2>
-    <p class="sub">Jede Woche die Ausgabe deines Themas. Zu jeder Firma stehen zusätzlich der Ansprechpartner mit Funktion und die Telefonnummer, soweit sie öffentlich belegt sind, jeweils mit der Quelle.</p>
+    <p class="sub">Für Vertrieb, Versicherung und Handwerk: Jede Woche die Ausgabe deines Themas. Zu jeder Firma stehen zusätzlich der Ansprechpartner mit Funktion und die Telefonnummer, soweit sie öffentlich belegt sind, jeweils mit der Quelle.</p>
     <div class="plus2">
       <div class="kasten">
         <h3>Radar gratis</h3>
@@ -414,6 +441,31 @@
   var AUTOHIDE = Boolean(0);
 </script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script id="radar-region-pflicht">
+(function () {
+  var form = document.getElementById('sib-form'), thema = document.getElementById('THEMA'), region = document.getElementById('REGION');
+  if (!form || !thema || !region) { return; }
+  var block = region.closest('.sib-form-block'), fehler = block ? block.querySelector('.entry__error') : null;
+  function regional() { return thema.value === '4' || thema.value === '12'; }
+  function zeigen() {
+    if (block && block.parentNode) { block.parentNode.style.display = regional() ? '' : 'none'; }
+    if (!regional()) { region.selectedIndex = 0; }
+    if (fehler) { fehler.textContent = ''; fehler.style.display = 'none'; }
+  }
+  thema.addEventListener('change', zeigen);
+  region.addEventListener('change', function () { if (fehler) { fehler.textContent = ''; fehler.style.display = 'none'; } });
+  form.addEventListener('submit', function (ereignis) {
+    if (regional() && !region.value) {
+      ereignis.preventDefault();
+      ereignis.stopImmediatePropagation();
+      if (fehler) { fehler.textContent = 'Bitte wähle deine Großregion.'; fehler.style.display = 'block'; }
+      region.focus();
+    }
+  }, true);
+  zeigen();
+})();
+</script>
+
 <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
 
 <!-- End Brevo Form -->
