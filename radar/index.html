@@ -25,6 +25,15 @@
   h2{font-size:clamp(26px,3.4vw,38px);line-height:1.12;letter-spacing:-.025em;font-weight:800;margin-bottom:14px}
   h3{font-size:20px;line-height:1.25;margin-bottom:8px}
   .grad{background:linear-gradient(100deg,var(--cyan),var(--emerald) 55%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .radar-leseprobe{margin:0 auto 36px;max-width:980px;padding:30px;border:1px solid var(--border2);border-radius:18px;background:linear-gradient(145deg,#f7fafc,#eaf1f5);color:#15212b;box-shadow:0 18px 45px rgba(0,0,0,.16)}
+  .radar-leseprobe h2{color:#15212b;margin-bottom:10px}
+  .radar-leseprobe .lead{color:#405261;line-height:1.6;margin-bottom:22px}
+  .radar-leseprobe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  .radar-leseprobe-card{padding:18px;border:1px solid #c9d5dd;border-radius:12px;background:#fff}
+  .radar-leseprobe-card h3{font-size:17px;color:#15212b}
+  .radar-leseprobe-card p{color:#405261;font-size:14px;line-height:1.55}
+  .radar-leseprobe-card strong{color:#15212b}
+  .radar-leseprobe-foot{margin-top:22px;color:#405261;font-size:14px;line-height:1.55}
   .lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:680px;margin-bottom:26px}
   .sub{color:var(--muted);font-size:18px;max-width:680px;margin-bottom:30px}
   .btns{display:flex;gap:12px;flex-wrap:wrap}
@@ -48,7 +57,7 @@
   .pakete .sub{margin-left:auto;margin-right:auto}
   footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font-size:14px}
   footer a{color:var(--cyan)}
-  @media(max-width:820px){.drei,.themen{grid-template-columns:1fr}section{padding:40px 0}}
+  @media(max-width:820px){.drei,.themen,.radar-leseprobe-grid{grid-template-columns:1fr}section{padding:40px 0}}
 </style>
 <!-- Begin Brevo Form -->
 
@@ -195,6 +204,25 @@
       <div class="eyebrow">Anmelden</div>
       <h2>Radar gratis bekommen.</h2>
       <p class="sub" style="margin-left:auto;margin-right:auto">Nach dem Absenden bekommst du eine E-Mail zum Bestätigen. Die Ausgaben für dein Thema starten, sobald es dafür geprüfte Anlässe gibt. Abmelden kannst du dich jederzeit über den Link in jeder Ausgabe.</p>
+    </div>
+    <div class="radar-leseprobe" aria-labelledby="radar-leseprobe-title">
+      <h2 id="radar-leseprobe-title">So sieht der Radar aus</h2>
+      <p class="lead">Jede Woche Firmen mit echtem Anlass für deine Neukundengewinnung. Hier drei echte Einträge aus der aktuellen Ausgabe „Vertrieb“:</p>
+      <div class="radar-leseprobe-grid">
+        <article class="radar-leseprobe-card">
+          <h3>PURUS Plastics GmbH</h3>
+          <p><strong>Stuttgart, Baden-Württemberg.</strong> Stellenanzeige: Fachberater im Vertriebsaussendienst (m/w/d) — „Fokus auf den Ausbau des Neukundengeschäfts". Quelle: arbeitsagentur.de, 6. Oktober 2026.</p>
+        </article>
+        <article class="radar-leseprobe-card">
+          <h3>Novenio Holding GmbH &amp; Co. KG</h3>
+          <p><strong>Landsberg am Lech, Bayern.</strong> Stellenanzeige: Vertriebsassistenz und -koordination international. Quelle: arbeitsagentur.de, 28. September 2026.</p>
+        </article>
+        <article class="radar-leseprobe-card">
+          <h3>Monarchco GmbH</h3>
+          <p><strong>Bonn, Nordrhein-Westfalen.</strong> Stellenanzeige: Werkstudent Sales / B2B-Vertrieb (m/w/d). Quelle: arbeitsagentur.de, 6. Oktober 2026.</p>
+        </article>
+      </div>
+      <p class="radar-leseprobe-foot">Ansprechpartner und Telefonnummern stehen nicht im Gratis-Radar — die gibt es in den Lead-Paketen und bei Radar Plus.</p>
     </div>
     <div class="anmelden">
 <!-- START - We recommend to place the below code where you want the form in your website html  -->
