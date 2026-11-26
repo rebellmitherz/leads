@@ -308,7 +308,7 @@
     .privacy-control { border: 0; padding: 0; background: transparent; color: #D6E4F0; cursor: pointer; font: inherit; }
     .privacy-control:hover { text-decoration: underline; }
     .about { display: grid; grid-template-columns: 260px 1fr; gap: 46px; align-items: center; }
-    .about-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px 18px 70px 18px; box-shadow: var(--shadow); }
+    .about-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px 18px 70px 18px; box-shadow: var(--shadow); filter: brightness(1.10) contrast(0.87) saturate(0.97); }
     .about blockquote { margin: 0 0 20px; font-size: clamp(27px, 3.6vw, 43px); line-height: 1.12; letter-spacing: -.025em; font-weight: 650; }
     .about p { margin-bottom: 4px; color: var(--muted); }
     .faq { max-width: 860px; }
@@ -502,11 +502,11 @@
     section[id] { scroll-margin-top: 84px; }
     /* Jellen-Umbau 2026-11-26 */
     .person-chip { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 22px; padding: 7px 16px 7px 7px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); box-shadow: var(--shadow); }
-    .person-chip img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+    .person-chip img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; filter: brightness(1.10) contrast(0.87) saturate(0.97); }
     .person-chip strong { display: block; font-size: 15px; line-height: 1.15; }
     .person-chip span { display: block; color: var(--muted); font-size: 13px; line-height: 1.2; }
-    .hero-person { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow); overflow: hidden; max-width: 330px; width: 100%; justify-self: end; }
-    .hero-person img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; }
+    .hero-person { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow); overflow: hidden; }
+    .hero-person img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; filter: brightness(1.10) contrast(0.87) saturate(0.97); }
     .hero-person-body { padding: 22px 24px 24px; }
     .hero-person-body strong { display: block; font-size: 21px; margin-bottom: 2px; }
     .hero-person-body .role { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
@@ -525,7 +525,7 @@
     .calc-lines { margin-top: 16px; display: grid; gap: 8px; font-size: 16px; }
     .calc-lines div { display: flex; justify-content: space-between; gap: 16px; padding-top: 8px; border-top: 1px solid var(--line); }
     .calc-lines div:first-child { border-top: 0; padding-top: 0; }
-    @media (max-width: 900px) { .pain-grid { grid-template-columns: 1fr; } .hero-person { width: min(300px, 100%); margin-inline: auto; justify-self: center; } }
+    @media (max-width: 900px) { .pain-grid { grid-template-columns: 1fr; } .hero-person { width: min(520px, 100%); margin-inline: auto; } }
   </style>
 </head>
 <body>
