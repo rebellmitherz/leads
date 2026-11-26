@@ -505,8 +505,8 @@
     .person-chip img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
     .person-chip strong { display: block; font-size: 15px; line-height: 1.15; }
     .person-chip span { display: block; color: var(--muted); font-size: 13px; line-height: 1.2; }
-    .hero-person { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow); overflow: hidden; }
-    .hero-person img { width: 100%; aspect-ratio: 4/4.4; object-fit: cover; object-position: top; }
+    .hero-person { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow); overflow: hidden; max-width: 330px; width: 100%; justify-self: end; }
+    .hero-person img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; }
     .hero-person-body { padding: 22px 24px 24px; }
     .hero-person-body strong { display: block; font-size: 21px; margin-bottom: 2px; }
     .hero-person-body .role { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
@@ -525,7 +525,7 @@
     .calc-lines { margin-top: 16px; display: grid; gap: 8px; font-size: 16px; }
     .calc-lines div { display: flex; justify-content: space-between; gap: 16px; padding-top: 8px; border-top: 1px solid var(--line); }
     .calc-lines div:first-child { border-top: 0; padding-top: 0; }
-    @media (max-width: 900px) { .pain-grid { grid-template-columns: 1fr; } .hero-person { width: min(520px, 100%); margin-inline: auto; } }
+    @media (max-width: 900px) { .pain-grid { grid-template-columns: 1fr; } .hero-person { width: min(300px, 100%); margin-inline: auto; justify-self: center; } }
   </style>
 </head>
 <body>
